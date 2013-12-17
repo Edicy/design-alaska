@@ -39,5 +39,33 @@ body {
 	font-size: 24px;
 	font-style: italic;
 	border: 1px solid #fff;
+}
 
+/* MAIN MENU */
+.main-menu {
+	min-height: 69px;
+	font-family: "Aktiv Grotesk";
+	font-weight: 700;
+	border-bottom: 1px solid #ddd;
+}
+.main-menu .wrap {
+	border-right: 1px solid #ddd;
+}
+.menu {
+	margin: 0;
+	padding: 0;
+	float: right;
+	list-style: none;
+}
+.horizontal li {
+	float: left;
+	text-align: center;
+	border-left: 1px solid #ddd;
+}
+.horizontal li a {
+	display: block;
+	padding: 23px;
+}
+.horizontal li a {
+	color: #333;
 }

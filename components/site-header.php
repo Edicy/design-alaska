@@ -8,15 +8,14 @@
     </div>
   </section>
 
-  <section class="wrap">
-    <nav class="main-menu cfx" role="navigation">
+  <nav class="main-menu" role="navigation">
+    <div class="wrap cfx">
       <ul class="menu horizontal">
-        <li class="active"><a href="#">kaks</a></li>
-        <li><a href="#">kolm</a></li>
-        <li><a href="#">neli</a></li>
-        <li><a href="#">viis</a></li>
-        <li><a href="#">kuus</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Personal</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
-  </section>
+    </div>
+  </nav>
 </header>
