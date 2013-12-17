@@ -12,7 +12,9 @@
       <header class="content-header">
         Title
       </header>
-      Content area
+There are several established campsites on this stretch with great views up-valley. Look for moose in the willow-shrouded creek corridor. Here the trail becomes steep, faint, and obstructed by several down trees. 
+
+Though brief, this section is difficult to navigate and reclaim the trail once off course. Pay close attention to your progress and location. 
     </main>
 
     <?php require("components/site-footer.php") ?>

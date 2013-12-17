@@ -1,10 +1,13 @@
 <header class="site-header">
-  <section class="header-banner">
-    <div class="header-logo cfx" role="banner">
-      <a href="index.php">Boulder</a>
-      <div class="">Between the scenic mountains and crystal blue lake lies a quiet cabin in the woods</div>
+  <section class="header-banner" role="banner">
+    <div class="wrap">
+      <div class="header-logo cfx">
+        <a href="index.php">Boulder</a>
+      </div>
+      <div class="header-slogan">Between the scenic mountains and crystal blue lake lies a quiet cabin in the woods</div>
     </div>
   </section>
+
   <section class="wrap">
     <nav class="main-menu cfx" role="navigation">
       <ul class="menu horizontal">
