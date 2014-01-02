@@ -75,4 +75,15 @@ body {
 	color: #333;
 }
 
-/**/
+/* CONTENT AREA */
+.content-header {
+	border-bottom: 1px solid #ddd;
+}
+.header-title {
+	max-width: 505px;
+	margin: 40px auto 47px;
+	text-align: center;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 400;
+}
