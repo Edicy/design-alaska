@@ -77,6 +77,13 @@ body {
 	padding: 23px;
 	color: #333;
 }
+.horizontal li.active a, .horizontal li.active a:hover {
+	color: #fff;
+	background: #333;
+}
+.horizontal li a:hover {
+	background: #ddd;
+}
 
 /* FRONT PAGE */
 .recent-header, .content-slogan {
