@@ -36,7 +36,7 @@ body {
 	padding: 60px 0;
 }
 .header-logo {
-	font-family: "Aktiv Grotesk";
+	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 44px;
 }
 .header-slogan {
@@ -51,7 +51,7 @@ body {
 /* MAIN MENU */
 .main-menu {
 	min-height: 69px;
-	font-family: "Aktiv Grotesk";
+	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	border-bottom: 1px solid #ddd;
 }
@@ -87,4 +87,41 @@ body {
 	font-size: 24px;
 	font-style: italic;
 	font-weight: 400;
+}
+
+/* BLOG */
+/* General */
+.post-title {
+	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/* Latest posts */
+.latest-posts {
+	padding: 20px 0;
+	text-align: center;
+}
+.latest-posts .post {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 235px;
+	margin-right: 15px;
+	text-align: left;
+	line-height: 1.2;
+}
+.latest-posts .post:last-child {
+	margin-right: 0;
+}
+.latest-posts .post-header {
+	margin: 0 0 15px;
+	border-bottom: 1px solid #ddd;
+}
+.latest-posts .post-image {
+	display: block;
+	max-width: 235px;
+	height: auto;
+}
+.latest-posts .post-title {
+	margin: 20px 0 15px;
 }
