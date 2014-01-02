@@ -68,7 +68,6 @@
     <?php require("components/site-footer.php") ?>
   </section>
 
-  <script>var pageType = "front"</script>
   <?php require("components/javascripts.php") ?>
 </body>
 </html>
