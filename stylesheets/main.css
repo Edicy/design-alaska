@@ -75,10 +75,13 @@ body {
 	color: #333;
 }
 
-/* CONTENT AREA */
+/* FRONT PAGE */
 .recent-header, .content-slogan {
 	padding: 40px 0 47px;
 	border-bottom: 1px solid #ddd;
+}
+.content-slogan {
+	border-top: 1px solid #ddd;
 }
 .main-title {
 	max-width: 505px;
@@ -95,6 +98,37 @@ body {
 	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 700;
+}
+.post-thumb {
+	max-width: 235px;
+	height: auto;
+	max-height: 235px;
+}
+
+/* Recent post */
+.post-thumbnails {
+	margin: 20px auto 15px;
+}
+.post-thumbnails .small-thumbs {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 505px;
+}
+.post-thumbnails .small-thumbs .post-thumb {
+	margin-right: 15px;
+}
+.post-thumbnails .small-thumbs .post-thumb:first-child, .post-thumbnails .small-thumbs .post-thumb:nth-child(2) {
+	margin-bottom: 15px;
+}
+.post-thumbnails .large-thumb {
+	display: inline-block;
+	vertical-align: top;
+}
+.post-thumbnails .large-thumb .post-thumb {
+	max-width: 490px;
+	width: 490px;
+	max-height: 490px;
+	height: 490px;
 }
 
 /* Latest posts */
@@ -116,11 +150,6 @@ body {
 .latest-posts .post-header {
 	margin: 0 0 15px;
 	border-bottom: 1px solid #ddd;
-}
-.latest-posts .post-image {
-	display: block;
-	max-width: 235px;
-	height: auto;
 }
 .latest-posts .post-title {
 	margin: 20px 0 15px;
