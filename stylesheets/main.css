@@ -76,12 +76,13 @@ body {
 }
 
 /* CONTENT AREA */
-.content-header {
+.recent-header, .content-slogan {
+	padding: 40px 0 47px;
 	border-bottom: 1px solid #ddd;
 }
-.header-title {
+.main-title {
 	max-width: 505px;
-	margin: 40px auto 47px;
+	margin: 0 auto;	
 	text-align: center;
 	font-size: 24px;
 	font-style: italic;

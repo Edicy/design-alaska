@@ -9,9 +9,14 @@
     <?php require("components/site-header.php") ?>
 
     <main class="page-content cfx" role="main">
-      <header class="content-header">
-        <h1 class="header-title">This family house stands amongst dense pine trees on the outskirts of Alaska</h1>
-      </header>
+      <article class="recent-post">
+        <header class="recent-header">
+          <h1 class="main-title">This family house stands amongst dense pine trees on the outskirts of Alaska</h1>
+        </header>
+      </article>
+      <section class="content-slogan">
+        <div class="main-title">For fishing with bait, crabs, small fish and cut bait all work very well.</div>
+      </section>
     </main>
 
     <?php require("components/site-footer.php") ?>
