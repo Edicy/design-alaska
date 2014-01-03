@@ -26,7 +26,7 @@
     <?php require("components/site-footer.php") ?>
   </section>
 
-  <script>var pageType = "blog"</script>
   <?php require("components/javascripts.php") ?>
+  <script>project.initArticlePage();</script>
 </body>
 </html>

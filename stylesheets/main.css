@@ -39,8 +39,10 @@ body {
 	padding: 60px 0;
 }
 .header-logo {
+	margin: 0;
 	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 44px;
+	font-weight: 400;
 }
 .header-slogan {
 	max-width: 509px;
@@ -51,12 +53,31 @@ body {
 	border: 1px solid #fff;
 }
 
+.header-bar {
+	border-bottom: 1px solid #ddd;
+}
+.header-bar .wrap {
+	display: table;
+	width: 100%;
+}
+.header-left, .header-right {
+	display: table-cell;
+	vertical-align: middle;
+}
+.header-left {
+	max-width: 225px;
+}
+.header-title {
+	margin: 0;
+	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 26px
+}
+
 /* MAIN MENU */
 .main-menu {
 	min-height: 69px;
 	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
-	border-bottom: 1px solid #ddd;
 }
 .main-menu .wrap {
 	border-right: 1px solid #ddd;
@@ -93,7 +114,7 @@ body {
 .content-slogan {
 	border-top: 1px solid #ddd;
 }
-.main-title {
+.content-title {
 	max-width: 505px;
 	margin: 0 auto;	
 	text-align: center;

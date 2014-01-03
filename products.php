@@ -18,7 +18,7 @@
     <?php require("components/site-footer.php") ?>
   </section>
 
-  <script>var pageType = "common"</script>
   <?php require("components/javascripts.php") ?>
+  <script>project.initCommonPage();</script>
 </body>
 </html>
