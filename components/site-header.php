@@ -11,7 +11,7 @@
   <section class="header-bar">
     <div class="wrap cfx">
       <section class="header-left">
-        <h1 class="header-title">Lorem ipsum dolor sit amet</h1>
+        <h1 class="header-title">Alaska</h1>
       </section>
       <section class="header-right">
         <nav class="main-menu" role="navigation">

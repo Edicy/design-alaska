@@ -8,61 +8,34 @@
   <section class="site-content cfx">
     <?php require("components/site-header.php") ?>
 
-    <main class="page-content cfx" role="main">
-      <article class="recent-post">
-        <header class="recent-header">
-          <h1 class="main-title">This family house stands amongst dense pine trees on the outskirts of Alaska</h1>
-        </header>
-        <section class="post-thumbnails wrap">
-          <div class="small-thumbs">
-            <img class="post-thumb" src="http://placeimg.com/470/470/any">
-            <img class="post-thumb" src="http://placeimg.com/470/470/any">
-            <img class="post-thumb" src="http://placeimg.com/470/470/any">
-            <img class="post-thumb" src="http://placeimg.com/470/470/any">
+    <main class="page-content blog cfx" role="main">
+      <article class="post">
+        <div class="wrap cfx">
+          <h2 class="post-title"><a href="article.php">The cabin stood quietly among the trees.</a></h2>
+          <div class="post-excerpt">
+            <p>While the lake is exceptional, the hike to it is equally compelling. Visitors will enjoy pristine valleys, abundant aspen, open alpine travel and excellent backcountry camping en route to Abyss Lake: The trail begins on a steady grade through uniform lodgepole and young aspen (1.0 miles : 10,020').</p>
           </div>
-          <div class="large-thumb">
-            <img class="post-thumb" src="http://placeimg.com/470/478/any">
-          </div>
-        </section>
+          <time datetime="13.11.05" class="post-date">November 5, 2013</time>
+        </div>
       </article>
-
-      <section class="content-slogan">
-        <div class="main-title">For fishing with bait, crabs, small fish and cut bait all work very well.</div>
-      </section>
-
-      <section class="latest-posts wrap">
-        <article class="post">
-          <header class="post-header">
-            <img class="post-thumb" src="http://placeimg.com/470/470/any">
-            <h2 class="post-title">Active mermaid fishing on lake Abyss</h2>
-          </header>
-          <div class="post-excerpt">A part of the Glacier Bay National Park and Preserve, its water is regularly.</div>
-        </article>
-
-        <article class="post">
-          <header class="post-header">
-            <img class="post-thumb" src="http://placeimg.com/471/471/any">
-            <h2 class="post-title">Fishing from a boat in easy sight</h2>
-          </header>
-          <div class="post-excerpt">Anglers either use an uptide rod between 9 and 10 feet in length to cast from the boat.</div>
-        </article>
-
-        <article class="post">
-          <header class="post-header">
-            <img class="post-thumb" src="http://placeimg.com/472/472/any">
-            <h2 class="post-title">An angler in a float tube plays a pike.</h2>
-          </header>
-          <div class="post-excerpt">Though they differ in design and are expensive to build and maintain.</div>
-        </article>
-
-        <article class="post">
-          <header class="post-header">
-            <img class="post-thumb" src="http://placeimg.com/473/473/any">
-            <h2 class="post-title">Deep sea fishing from a boat in the Gulf </h2>
-          </header>
-          <div class="post-excerpt">Offshore game fish, like marlin and tuna, can be very large and heavy tackle is needed.</div>
-        </article>
-      </section>
+      <article class="post">
+        <div class="wrap cfx">
+          <h2 class="post-title"><a href="article.php">The cabin stood quietly among the trees.</a></h2>
+          <div class="post-excerpt">
+            <p>While the lake is exceptional, the hike to it is equally compelling. Visitors will enjoy pristine valleys, abundant aspen, open alpine travel and excellent backcountry camping en route to Abyss Lake: The trail begins on a steady grade through uniform lodgepole and young aspen (1.0 miles : 10,020').</p>
+          </div>
+          <time datetime="13.11.05" class="post-date">November 5, 2013</time>
+        </div>
+      </article>
+      <article class="post">
+        <div class="wrap cfx">
+          <h2 class="post-title"><a href="article.php">The cabin stood quietly among the trees.</a></h2>
+          <div class="post-excerpt">
+            <p>While the lake is exceptional, the hike to it is equally compelling. Visitors will enjoy pristine valleys, abundant aspen, open alpine travel and excellent backcountry camping en route to Abyss Lake: The trail begins on a steady grade through uniform lodgepole and young aspen (1.0 miles : 10,020').</p>
+          </div>
+          <time datetime="13.11.05" class="post-date">November 5, 2013</time>
+        </div>
+      </article>
     </main>
 
     <?php require("components/site-footer.php") ?>
