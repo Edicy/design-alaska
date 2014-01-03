@@ -3,22 +3,32 @@
 <head>
   <?php require("components/html-head.php") ?>
 </head>
+
 <body>
   <section class="site-content cfx">
     <?php require("components/site-header.php") ?>
 
     <main class="page-content cfx" role="main">
-      <article class="post">
-        <header class="post-header">
-          <h1 class="post-title">How I wrote my first article</h1>
-          <time datetime="2013-11-25" class="post-date">06.04.2014</time>
-          <?php require("components/tags-article.php") ?>
+      <article class="recent-post">
+        <header class="recent-header">
+          <h2 class="content-title">This family house stands amongst dense pine trees on the outskirts of Alaska</h2>
         </header>
-        <section class="post-excerpt">
-          <p>Post news of any subject your audience would appreciate. Delete this temporary post from the Blogs section below. By the way, you can add any kind of content to your blog post — text, pictures, tables, forms, and galleries.</p>
-        </section>
-        <section class="post-body">
-          <p>The above is excerpt of the article. It appears in the blog post listing. This here is the body of the post. This only appears here, on the post page.</p>
+        <section class="post-thumbnails wrap">
+          <div class="small-thumbs">
+            <img class="post-thumb" src="http://placeimg.com/470/470/any">
+            <img class="post-thumb" src="http://placeimg.com/470/470/any">
+            <img class="post-thumb" src="http://placeimg.com/470/470/any">
+            <img class="post-thumb" src="http://placeimg.com/470/470/any">
+          </div>
+          <div class="large-thumb">
+            <img class="post-thumb" src="http://placeimg.com/470/478/any">
+          </div>
+          <div class="bottom-thumbs">
+            <img class="post-thumb" src="http://placeimg.com/470/470/any">
+            <img class="post-thumb" src="http://placeimg.com/470/470/any">
+            <img class="post-thumb" src="http://placeimg.com/470/470/any">
+            <img class="post-thumb" src="http://placeimg.com/470/470/any">
+          </div>
         </section>
       </article>
     </main>

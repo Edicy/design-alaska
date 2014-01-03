@@ -168,18 +168,15 @@ body {
 
 /* Recent post */
 .post-thumbnails {
-	margin: 20px auto 15px;
+	margin: 20px auto 0;
 }
 .post-thumbnails .small-thumbs {
 	display: inline-block;
 	vertical-align: top;
 	max-width: 505px;
 }
-.post-thumbnails .small-thumbs .post-thumb {
-	margin-right: 15px;
-}
-.post-thumbnails .small-thumbs .post-thumb:first-child, .post-thumbnails .small-thumbs .post-thumb:nth-child(2) {
-	margin-bottom: 15px;
+.post-thumbnails .small-thumbs .post-thumb, .post-thumbnails .bottom-thumbs .post-thumb {
+	margin: 0 15px 15px 0;
 }
 .post-thumbnails .large-thumb {
 	display: inline-block;
@@ -190,6 +187,9 @@ body {
 	width: 490px;
 	max-height: 490px;
 	height: 490px;
+}
+.post-thumbnails .bottom-thumbs .post-thumb:last-child {
+	margin-right: 0;
 }
 
 /* Latest posts */
