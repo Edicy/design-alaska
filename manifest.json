@@ -1,0 +1,264 @@
+{
+  "description": "Alaska",
+  "preview_medium": "http://static.edicy.com/designs/previews/tallinn_medium.jpg",
+  "author": "Kuldar Kalvik",
+  "layouts": [
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/article-custom-gallery.tpl",
+      "layout_name": "component",
+      "title": "article-custom-gallery"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/html-head.tpl",
+      "layout_name": "component",
+      "title": "html-head"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/javascripts.tpl",
+      "layout_name": "component",
+      "title": "javascripts"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/page-custom-gallery.tpl",
+      "layout_name": "component",
+      "title": "page-custom-gallery"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/post-content.tpl",
+      "layout_name": "component",
+      "title": "post-content"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/site-footer.tpl",
+      "layout_name": "content",
+      "title": "site-footer"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/site-header.tpl",
+      "layout_name": "component",
+      "title": "site-header"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-article.tpl",
+      "layout_name": "component",
+      "title": "tags-article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-blog.tpl",
+      "layout_name": "component",
+      "title": "tags-blog"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_front",
+      "title": "Front page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/common_page.tpl",
+      "layout_name": "page_default",
+      "title": "Common page"
+    },
+    {
+      "content_type": "blog",
+      "component": false,
+      "file": "layouts/blog___news.tpl",
+      "layout_name": "blog",
+      "title": "Blog & News"
+    },
+    {
+      "content_type": "blog_article",
+      "component": false,
+      "file": "layouts/blog_article.tpl",
+      "layout_name": "",
+      "title": "Blog article"
+    }
+  ],
+  "preview_small": "http://static.edicy.com/designs/previews/tallinn_small.jpg",
+  "name": "Alaska",
+  "assets": [
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/edicyThumbEditor.css",
+      "kind": "stylesheets",
+      "filename": "edicyThumbEditor.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/fonts.css",
+      "kind": "stylesheets",
+      "filename": "fonts.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/main.css",
+      "kind": "stylesheets",
+      "filename": "main.css"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/edicy.customFields.js",
+      "kind": "javascripts",
+      "filename": "edicy.customFields.js"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/edicy.customGallery.js",
+      "kind": "javascripts",
+      "filename": "edicy.customGallery.js"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/edicy.imgDropArea.js",
+      "kind": "javascripts",
+      "filename": "edicy.imgDropArea.js"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/jquery-1.10.2.min.js",
+      "kind": "javascripts",
+      "filename": "jquery-1.10.2.min.js"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/jquery.articlePages.js",
+      "kind": "javascripts",
+      "filename": "jquery.articlePages.js"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/main.js",
+      "kind": "javascripts",
+      "filename": "main.js"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/modernizr.custom.js",
+      "kind": "javascripts",
+      "filename": "modernizr.custom.js"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/retina-1.1.0.min.js",
+      "kind": "javascripts",
+      "filename": "retina-1.1.0.min.js"
+    },
+    {
+      "content_type": "font/eot",
+      "file": "assets/aktivgrotesk_corp_bd.eot",
+      "kind": "assets",
+      "filename": "aktivgrotesk_corp_bd.eot"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "images/aktivgrotesk_corp_bd.svg",
+      "kind": "images",
+      "filename": "aktivgrotesk_corp_bd.svg"
+    },
+    {
+      "content_type": "font/ttf",
+      "file": "images/aktivgrotesk_corp_bd.ttf",
+      "kind": "images",
+      "filename": "aktivgrotesk_corp_bd.svg"
+    },
+    {
+      "content_type": "font/woff",
+      "file": "images/aktivgrotesk_corp_bd.woff",
+      "kind": "images",
+      "filename": "aktivgrotesk_corp_bd.woff"
+    },
+    {
+      "content_type": "font/eot",
+      "file": "assets/aktivgrotesk_corp_rg.eot",
+      "kind": "assets",
+      "filename": "aktivgrotesk_corp_rg.eot"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "images/aktivgrotesk_corp_rg.svg",
+      "kind": "images",
+      "filename": "aktivgrotesk_corp_rg.svg"
+    },
+    {
+      "content_type": "font/ttf",
+      "file": "images/aktivgrotesk_corp_rg.ttf",
+      "kind": "images",
+      "filename": "aktivgrotesk_corp_rg.svg"
+    },
+    {
+      "content_type": "font/woff",
+      "file": "images/aktivgrotesk_corp_rg.woff",
+      "kind": "images",
+      "filename": "aktivgrotesk_corp_rg.woff"
+    },
+    {
+      "content_type": "font/eot",
+      "file": "assets/metaserifpro-bookita.eot",
+      "kind": "assets",
+      "filename": "metaserifpro-book.eot"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "images/metaserifpro-book.svg",
+      "kind": "images",
+      "filename": "metaserifpro-book.svg"
+    },
+    {
+      "content_type": "font/ttf",
+      "file": "images/metaserifpro-book.ttf",
+      "kind": "images",
+      "filename": "metaserifpro-book.svg"
+    },
+    {
+      "content_type": "font/woff",
+      "file": "images/metaserifpro-book.woff",
+      "kind": "images",
+      "filename": "metaserifpro-book.woff"
+    },
+    {
+      "content_type": "font/eot",
+      "file": "assets/metaserifpro-bookita.eot",
+      "kind": "assets",
+      "filename": "metaserifpro-bookita.eot"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "images/metaserifpro-bookita.svg",
+      "kind": "images",
+      "filename": "metaserifpro-bookita.svg"
+    },
+    {
+      "content_type": "font/ttf",
+      "file": "images/metaserifpro-bookita.ttf",
+      "kind": "images",
+      "filename": "metaserifpro-bookita.svg"
+    },
+    {
+      "content_type": "font/woff",
+      "file": "images/metaserifpro-bookita.woff",
+      "kind": "images",
+      "filename": "metaserifpro-bookita.woff"
+    }
+  ]
+}

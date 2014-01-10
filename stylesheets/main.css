@@ -1,248 +1,342 @@
 /* GENERAL */
 .cfx:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	font: 400 18px/1.3 "Meta Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #333;
+  margin: 0;
+  padding: 0;
+  font: 400 18px/1.3 "Meta Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
 }
 .site-content p {
-	margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .site-content a {
-	text-decoration: none
+  text-decoration: none
 }
 .page-content {
-	border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
-.page-content h2 {
-	margin: 0 0 17px;
-	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 20px;
-	font-weight: 700;	
+.page-content h2,
+.sub-title {
+  display: block;
+  width: 100%;
+  margin: 0 0 17px;
+  font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  outline: none;
+}
+.page-content h3 {
+  margin: 0 0 27px;
+}
+.sub-title:hover {
+  border: 1px dashed #7fddf6;
+}
+.sub-title:focus {
+  border: 1px dashed #0be;
 }
 .wrap {
-	max-width: 1000px;
-	margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.recent-header, .content-slogan, .article .post-header {
-	padding: 40px 0 47px;
-	border-bottom: 1px solid #ddd;
+.content-slogan,
+.article .post-header,
+.page-header {
+  padding: 40px 0 47px;
+  border-bottom: 1px solid #ddd;
 }
 .content-slogan {
-	border-top: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
-.content-title, .article .post-title {
-	max-width: 505px;
-	margin: 0 auto;	
-	text-align: center;
-	font-family: "Meta Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 24px;
-	font-style: italic;
-	font-weight: 400;
+.page-content .content-title,
+.article .post-title,
+.page-title {
+  max-width: 505px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: "Meta Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
 }
 
 /* HEADER */
-.header-banner, .header-banner a {
-	color: #fff;
+.header-banner,
+.header-banner a {
+  color: #fff;
 }
 .header-banner {
-	display: table;
-	width: 100%;
-	height: 600px;
-	text-align: center;
-	background: url('../images/temp/header-bg.jpg') center no-repeat;
-	background-size: cover;
+  display: table;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  background: url('../photos/header-bg.jpg') center no-repeat;
+  background-size: cover;
 }
 .header-banner .wrap {
-	display: table-cell;
-	vertical-align: middle;
-	padding: 60px 0;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 60px 20px;
 }
 .header-logo {
-	margin: 0;
-	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 44px;
-	font-weight: 400;
+  max-width: 573px;
+  margin: 0 auto;
+  font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 44px;
+  font-weight: 400;
 }
 .header-slogan {
-	max-width: 509px;
-	margin: 0 auto;
-	padding: 12px 32px 22px;
-	font-size: 24px;
-	font-style: italic;
-	border: 1px solid #fff;
+  max-width: 509px;
+  margin: 0 auto;
+  padding: 12px 32px 22px;
+  font-size: 24px;
+  font-style: italic;
+  border: 1px solid #fff;
 }
 
 .header-bar {
-	border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 .header-bar .wrap {
-	display: table;
-	width: 100%;
+  display: table;
+  width: 100%;
 }
 .header-left, .header-right {
-	display: table-cell;
-	vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 .header-left {
-	max-width: 225px;
+  max-width: 225px;
 }
 .header-title {
-	margin: 0;
-	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 26px
+  margin: 0;
+  font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 26px
+}
+.header-title a {
+  color: #333;
+}
+.header-title a:hover {
+  color: #5c5c5c;
 }
 
 /* MAIN MENU */
 .main-menu {
-	min-height: 69px;
-	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
+  min-height: 69px;
+  font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 .main-menu .wrap {
-	border-right: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
 .menu {
-	margin: 0;
-	padding: 0;
-	float: right;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  list-style: none;
 }
 .horizontal li {
-	float: left;
-	text-align: center;
-	border-left: 1px solid #ddd;
+  float: left;
+  text-align: center;
+  border-left: 1px solid #ddd;
 }
 .horizontal li a {
-	display: block;
-	padding: 23px;
-	color: #333;
+  display: block;
+  padding: 23px;
+  color: #333;
 }
 .horizontal li.active a, .horizontal li.active a:hover {
-	color: #fff;
-	background: #333;
+  color: #fff;
+  background: #333;
 }
 .horizontal li a:hover {
-	background: #ddd;
+  background: #f3f3f3;
+}
+
+/* COMMON PAGE */
+.common-page .wrap {
+  margin: 27px auto;
 }
 
 /* BLOG */
 /* General */
 .post-title {
-	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 20px;
-	font-weight: 700;
+  font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 }
-.post-thumb {
-	max-width: 235px;
-	height: auto;
-	max-height: 235px;
+.post-title input {
+  text-align: center;
 }
 .blog .post {
-	padding: 40px 0;
-	border-bottom: 1px solid #ddd;
+  padding: 40px 0;
+  border-bottom: 1px solid #ddd;
 }
 .blog .post:last-child {
-	border-bottom: none;
+  border-bottom: none;
 }
 .blog .post .post-title {
-	margin: 0 0 14px;
-	font-size: 24px;
+  margin: 0 0 14px;
+  font-size: 24px;
 }
 .post-title a {
-	color: #333;
+  color: #333;
 }
 .post-title a:hover {
-	color: #5c5c5c;
+  color: #5c5c5c;
+}
+.post-excerpt {
+  margin-bottom: 22px;
 }
 .post-body p {
-	margin: 0 0 0 0 22px;
+  margin: 0 0 0 0 22px;
 }
 .post-date {
-	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	color: #ddd;
+  font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #ddd;
 }
 
 /* Article */
-.article .post-thumbnails {
-	border-bottom: 1px solid #ddd;
-}
 .article .post-content {
-	padding: 45px 0 39px;
+  padding: 45px 0 39px;
 }
-.article .post-body {
+/*.two-col {
   -webkit-column-count: 2;
     -webkit-column-gap: 20px;
      -moz-column-count: 2;
        -moz-column-gap: 20px;
           column-count: 2;
             column-gap: 20px;
+}*/
+
+/* Custom image gallery */
+.custom-gallery {
+  margin: 20px 0;
+}
+.custom-left {
+  display: inline-block;
+  max-width: 504px;
+}
+.custom-right {
+  display: inline-block;
+  vertical-align: top;
+}
+.custom-right .custom-image {
+  width: 492px;
+  height: 490px;
+  margin-right: 0;
+}
+.custom-image {
+  display: inline-block;
+  width: 235px;
+  height: 235px;
+  margin: 0 15px 15px 0;
+  background-size: cover;
+}
+.custom-bottom .custom-image:nth-child(4n+4) {
+  margin-right: 0;
 }
 
-/* Recent post */
-.post-thumbnails {
-	margin: 20px auto 0;
-}
-.post-thumbnails .small-thumbs {
-	display: inline-block;
-	vertical-align: top;
-	max-width: 505px;
-}
-.post-thumbnails .small-thumbs .post-thumb, .post-thumbnails .bottom-thumbs .post-thumb {
-	margin: 0 15px 15px 0;
-}
-.post-thumbnails .large-thumb {
-	display: inline-block;
-	vertical-align: top;
-}
-.post-thumbnails .large-thumb .post-thumb {
-	max-width: 490px;
-	width: 490px;
-	max-height: 490px;
-	height: 490px;
-}
-.post-thumbnails .bottom-thumbs .post-thumb:last-child {
-	margin-right: 0;
+/* TODO: Might not be needed */ 
+.post-thumb {
+  max-width: 235px;
+  max-height: 235px;
 }
 
 /* Latest posts */
+.latest-posts-col {
+  display: inline-block;
+}
+.latest-posts-col:first-child {
+  margin-right: 15px;
+}
 .latest-posts {
-	padding: 20px 0;
-	text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 .latest-posts .post {
-	display: inline-block;
-	vertical-align: top;
-	max-width: 235px;
-	margin-right: 15px;
-	text-align: left;
-	line-height: 1.2;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 235px;
+  margin-right: 15px;
+  text-align: left;
+  line-height: 1.2;
 }
 .latest-posts .post:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 .latest-posts .post-header {
-	margin: 0 0 15px;
-	border-bottom: 1px solid #ddd;
+  margin: 0 0 15px;
+  border-bottom: 1px solid #ddd;
 }
 .latest-posts .post-title {
-	margin: 20px 0 15px;
-	font-size: 20px;
+  margin: 20px 0 15px;
+  font-size: 20px;
 }
+
+/* Pagination */
+.page-numbers {
+  border-top: 1px solid #e5e5e5;
+  height: 47px;
+  text-align: center;
+}
+.pagination-inner {
+  height: inherit;
+  line-height: 2.7;
+  font-size: 18px;
+}
+.page-content .page-numbers a {
+  display: inline-block;
+  vertical-align: top;
+  height: 48px;
+  text-decoration: none;
+  font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+.page-content .page-numbers a:hover {
+  background: #f3f3f3;
+}
+.pagination-inner a {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+.pagination-inner a.active, .pagination-inner a.active:hover {
+  color: #fff;
+  background: #333;
+}
+.pagination-btn {
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  width: 112px;
+}
+.newer-btn {
+  float: left;
+}
+.nr-btn {
+  margin-left: -1px;
+  padding: 0 10px;
+}
+.older-btn {
+  float: right;
+}
+
 
 /* SITE FOOTER */
 .site-footer {
-	padding: 30px 0;
-	font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 30px 0;
+  font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .footer-left, .footer-right {
   display: inline-block;
@@ -256,4 +350,19 @@ body {
   max-width: 874px;
   text-align: right;
   width: 100%;
+}
+
+@media screen and (max-width: 528px) {
+  .header-banner, .header-banner .wrap {
+    display: block;
+    height: auto;
+  }
+  .page-content .content-title,
+  .article .post-title, .page-title {
+    width: auto;
+  }
+  .latest-posts .post {
+    max-width: 100%;
+    margin-right: 0;
+  }
 }

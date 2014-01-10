@@ -20,9 +20,9 @@
 <link rel="apple-touch-icon" href="{{ images_path }}/apple-touch-icon.png">
 
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,500,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css"> <!-- http://www.google.com/fonts -->
-<link rel="stylesheet" href="stylesheets/main.css" type="text/css">
-<link rel="stylesheet" href="stylesheets/fonts.css" type="text/css">
+{% stylesheet_link "main.css" %}
+{% stylesheet_link "fonts.css" %}
 
-<script type="text/javascript" src="javascripts/modernizr.custom.js"></script>
+<script type="text/javascript" src="{{ javascripts_path }}/modernizr.custom.js"></script>
 
-<title>Edicy template</title>
+<title>{% if article %}{{ article.title }} | {{ page.site_title }}{% else %}{% if site.root_item %}{{ page.site_title }}{% else %}{{ page.site_title }} | {{ page.title }}{% endif %}{% endif %}</title>

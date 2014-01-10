@@ -1,9 +1,9 @@
   <footer class="site-footer wrap cfx">
     <section class="footer-left">
-      Alaska 2013
+      {% contentblock name="footer-title" xpage="true" %}{{ site.header }}{% endcontentblock %}
     </section>
     <section class="footer-right">
-      1034 W 4th Ave, Anchorage, AK 99501   (303) 449-5173   info@alaska.com
+      {% xcontent name="footer" %}
     </section>
   </footer>
 </div>
