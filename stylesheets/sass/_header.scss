@@ -6,6 +6,7 @@
 
   .wrap {
     @include flexbox;
+    max-width: 960px;
 
     .header-left,
     .header-right {
