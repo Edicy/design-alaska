@@ -3,6 +3,18 @@
 
 .edicy
 
+.demo
+
+.develop
+
+.template
+
+.test
+
+.sass-cache
+
 *.html
 
-site.json
+*.css
+
+sftp-config.json

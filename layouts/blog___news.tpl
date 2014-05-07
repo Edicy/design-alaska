@@ -1,58 +1,48 @@
 <!DOCTYPE html>
-<html lang="{{ page.language_code }}">
+<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head>
   {% include "html-head" %}
+
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{{ site.name }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fbimage }}"><!-- TODO: Add image location data tag -->
+
+  {{ blog.rss_link }}
 </head>
 
-<body>
-  <section class="site-content cfx">
-    {% include "site-header" %}
+<body class="blog-page js-bgpicker-body-image" {% if site.data.body_image %}style="background-image: url('{{ site.data.body_image}}');{% if site.data.body_color %} position: relative;{% endif %}"{% endif %}>
+  {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ site.data.body_image }}" data-bg-color="{{ site.data.body_color }}"></button>{% endif %}
+  <div class="background-color js-bgpicker-body-color"{% if site.data.body_color %} style="background-color: {{ site.data.body_color }};{% if site.data.body_image %} opacity: 0.5;{% endif %}{% endif %}"></div>
 
-    <main class="page-content blog cfx" role="main">
-      <div class="articles-container">
-        <span id="loading-status">Loading ...</span>
-      </div>
-      
-      {% if articles.size > 5 %}
-        <div id="pagination" class="page-numbers">
-          <div class="wrap">
-          </div>
-        </div>
-      {% endif %}
+  <div class="container">
+    {% include "header" %}
+
+    <main class="content" role="main">
+      {% include "tags-blog" %}
+
+      {% for article in articles %}
+        {% include "post-box" %}
+      {% endfor %}
     </main>
 
-    {% include "site-footer" %}
-  </section>
-  
+    {% include "footer" %}
+
+  </div>
+
   {% include "javascripts" %}
-  <script>var langCode = "{{ page.language_code }}";</script>
-  <script src="{{ javascripts_path }}/jquery.articlePages.js"></script>
-  <script type="text/html" id="article-template">
-    <article class="post">
-      <div class="wrap cfx">
-        <h2 class="post-title"><a href="[[url]]">[[title]]</a></h2>
-        <div class="post-excerpt">
-          <p>[[excerpt]]</p>
-        </div>
-        <time datetime="[[dateAttr]]" class="post-date">[[date]]</time>
-      </div>
-    </article>
-  </script>
-  
-  <script type="text/javascript">
-    $('.articles-container').articlePages({
-        nr_articles: {{ articles.size }},
-        older: "Next",
-        newer: "Previous"
+  {% include "bg-picker" %}
+
+  <script>
+    $(document).ready(function() {
+      currentUrl = window.location.href;
+      blogUrl = '{{ site.url }}{{ page.path }}';
+      if (currentUrl === blogUrl) {
+        $('.js-tags-all').addClass('active');
+      };
     });
 
-    $('.article-container').on({
-      'articles.loading': function() { $('#loading-status').html('Loading ...'); },
-      'articles.loaded': function() { $('#loading-status').html(''); }
-    });
-  
-    $('#pagination .wrap').append($('.articles-container').articlePages('getPageLinks'));  
+    site.initBlogPage();
   </script>
-  <script>project.initBlogPage();</script>
 </body>
 </html>

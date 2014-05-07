@@ -1,38 +1,31 @@
 <!DOCTYPE html>
-<html lang="et">
+<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head>
   {% include "html-head" %}
-  {% stylesheet_link "edicyThumbEditor.css" %}
-  <style>
-    #thumb-wrapper {
-      width: 200px;
-      height: 200px;
-    }
-  </style>
+
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{{ site.name }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fbimage }}"><!-- TODO: Add image location data tag -->
 </head>
 
-<body>
-  <section class="site-content cfx">
-    {% include "site-header" %}
+<body class="common-page blog-page js-bgpicker-body-image" {% if site.data.body_image %}style="background-image: url('{{ site.data.body_image}}');"{% endif %}>
+  {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ site.data.body_image }}" data-bg-color="{{ site.data.body_color }}"></button>{% endif %}
+  <div class="background-color js-bgpicker-body-color"{% if site.data.body_color %} style="background-color: {{ site.data.body_color }};{% if site.data.body_image %} opacity: 0.5;{% endif %}"{% endif %}></div>
 
-    <main class="page-content page cfx" role="main">
-        <header class="page-header">
-          <h1 class="page-title">{% contentblock name="page-title" %}This family house stands amongst dense pine trees on the outskirts of Alaska{% endcontentblock %}</h1>
-        </header>
+  <div class="container">
+    {% include "header" %}
 
-        <section class="common-page">
-          <div class="wrap cfx">
-            {% content %}
-          </div>
-        </section>
-        
+    <main class="content" role="main">
+      <header class="content-header content-formatted">{% content name="slogan" %}</header>
+      <section class="content-body content-formatted">{% content %}</section>
     </main>
 
-    {% include "site-footer" %}
-  </section>
+    {% include "footer" %}
+
+  </div>
 
   {% include "javascripts" %}
-  <script>project.initCommonPage();</script>
-  
+  {% include "bg-picker" %}
 </body>
 </html>
