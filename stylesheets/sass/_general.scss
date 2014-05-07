@@ -1,1 +1,168 @@
 /* GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Meta Serif Pro Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  @include color($primary-color);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bgpicker-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.background-color {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  @include bg($white);
+
+  @include query($tablet-2) {
+    padding: 20px
+  }
+
+  a {
+    text-decoration: none;
+
+    img {
+      border: none;
+    }
+  }
+}
+
+// Styling rules for the site's editable content areas.
+.content-formatted {
+  @extend %clearfix;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  img,
+  pre,
+  code,
+  table {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    margin-bottom: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include color($secondary-color);
+    word-wrap: break-word;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 50px;
+    line-height: 1;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 30px;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  ul {
+    li {
+    }
+  }
+
+  ol {
+    li {
+    }
+  }
+
+  a {
+    @include color($blue);
+    &:hover {
+      @include color($blue, 0.8);
+    }
+  }
+
+  img,
+  iframe {
+    max-width: 100%;
+  }
+
+  img {
+    height: auto;
+  }
+
+  pre,
+  code {
+    margin-top: 0;
+  }
+
+  pre,
+  code {
+    display: block;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    font-size: 14px;
+    @include bg($grey-3);
+  }
+
+  .edy-texteditor-view {
+    min-height: 32px;
+  }
+}
