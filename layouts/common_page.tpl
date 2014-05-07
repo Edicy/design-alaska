@@ -21,7 +21,12 @@
         <div class="wrap">{% content name="slogan" %}</div>
       </header>
 
+      <!-- TODO: Custom image area -->
+      <!-- <section class="content-images"></section> -->
 
+      <section class="content-body">
+        <div class="wrap content-formatted">{% content %}</div>
+      </section>
     </main>
 
     {% include "footer" %}
