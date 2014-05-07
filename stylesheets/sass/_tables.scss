@@ -1,1 +1,28 @@
 /* TABLES */
+.content-formatted {
+  .table-container {
+    margin-top: 20px;
+  }
+
+  .overthrow {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .horizontal-scroll {
+    @include border(left, 1px, dashed ,$grey);
+    @include border(right, 1px, dashed ,$grey);
+  }
+
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+
+    td {
+      padding: 10px;
+      @include border(top, 1px, solid, $grey);
+      @include border(bottom, 1px, solid, $grey);
+    }
+  }
+}
