@@ -17,8 +17,11 @@
     {% include "header" %}
 
     <main class="content" role="main">
-      <header class="content-header content-formatted">{% content name="slogan" %}</header>
-      <section class="content-body content-formatted">{% content %}</section>
+      <header class="content-header content-formatted">
+        <div class="wrap">{% content name="slogan" %}</div>
+      </header>
+
+
     </main>
 
     {% include "footer" %}

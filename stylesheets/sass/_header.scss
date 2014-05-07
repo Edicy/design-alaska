@@ -1,5 +1,6 @@
 /* HEADER */
 .header {
+  min-height: 69px;
   font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   @include border(bottom, 1px, solid, $secondary-color);
 
@@ -16,7 +17,7 @@
     }
 
     .header-title {
-      padding: 18px 0;
+      padding: 19px 0;
       font-weight: 700;
       font-size: 26px;
 

@@ -1,1 +1,14 @@
 /* CONTENT */
+.content {
+  .content-header {
+    @include border(bottom, 1px, solid, $secondary-color);
+
+    .wrap {
+      max-width: 520px;
+      padding: 43px 0 50px;
+      text-align: center;
+      font-style: italic;
+      font-size: 24px;
+    }
+  }
+}
