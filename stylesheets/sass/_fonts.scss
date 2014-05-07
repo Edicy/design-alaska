@@ -1,4 +1,5 @@
 /* FONTS */
-@include font-face('Custom Font name', '../assets/custom-font-file-name', 400);
-@include font-face('Custom Font name', '../assets/custom-font-file-name', 700);
-@include font-face('Custom Font name', '../assets/custom-font-file-name', 400, italic);
+@include font-face('Aktiv Grotesk', '../assets/aktivgrotesk-corp-regular', 400);
+@include font-face('Aktiv Grotesk', '../assets/aktivgrotesk-corp-bold', 700);
+@include font-face('Meta Serif Pro Book', '../assets/metaserifpro-book-regular', 400);
+@include font-face('Meta Serif Pro Book', '../assets/metaserifpro-book-italic', 400, italic);
