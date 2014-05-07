@@ -39,14 +39,6 @@ body {
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  @include bg($white);
-
-  @include query($tablet-2) {
-    padding: 20px
-  }
 
   a {
     text-decoration: none;
@@ -55,6 +47,11 @@ body {
       border: none;
     }
   }
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 // Styling rules for the site's editable content areas.
@@ -94,7 +91,6 @@ body {
   h4,
   h5,
   h6 {
-    @include color($secondary-color);
     word-wrap: break-word;
   }
 
@@ -132,9 +128,7 @@ body {
   }
 
   a {
-    @include color($blue);
     &:hover {
-      @include color($blue, 0.8);
     }
   }
 
@@ -159,7 +153,6 @@ body {
     white-space: nowrap;
     padding: 10px;
     font-size: 14px;
-    @include bg($grey-3);
   }
 
   .edy-texteditor-view {

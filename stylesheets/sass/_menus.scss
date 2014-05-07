@@ -1,1 +1,145 @@
 /* MENUS */
+.menu-btn {
+  display: none;
+
+  @include query($tablet-2) {
+    position: absolute;
+    top: 46px;
+    right: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &.open {
+      .menu-stripe {
+        @include bg($secondary-color, 0.47);
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+
+    .menu-stripe {
+      display: block;
+      width: 25px;
+      height: 4px;
+      margin: 4px 0;
+      @include bg($secondary-color, 0.67);
+      border-radius: 5px;
+      &:first-child,
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+.edit-btn {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0.8;
+}
+
+.menu {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+
+  li {
+    &.edit-btn {
+    }
+
+    a {
+      text-decoration: none;
+      @include color($primary-color);
+
+      &.untranslated {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.menu-main {
+  float: right;
+  @include border(right, 1px, solid, $secondary-color);
+
+  @include query($tablet-2) {
+    display: none;
+
+    &.expanded {
+      top: 60px;
+      right: 20px;
+      z-index: 2;
+      display: block;
+      min-width: 350px;
+      text-align: left;
+      @include bg($white);
+
+      @include query($mobile-1) {
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .menu {
+    @extend %clearfix;
+    li {
+      float: left;
+
+      &:first-child {
+      }
+
+      @include query($tablet-2) {
+        display: block;
+        margin: 0;
+        font-size: 20px;
+        @include border(bottom, 1px, solid, $primary-color, 0.2);
+      }
+
+      a {
+        display: block;
+        padding: 23px 25px;
+        font-weight: 700;
+        font-size: 18px;
+        @include border(left, 1px, solid, $secondary-color);
+
+        &.active,
+        &:hover {
+          @include color($white);
+        }
+
+        &.active {
+          @include bg($third-color);
+        }
+
+        &:hover {
+          @include bg($third-color, 0.8);
+        }
+
+
+      }
+
+      @include query($tablet-2) {
+        display: block;
+        padding: 7px 25px 3px;
+
+        &:hover,
+        &.active {
+        }
+      }
+    }
+  }
+}
