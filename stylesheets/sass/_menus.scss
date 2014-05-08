@@ -96,6 +96,8 @@
   }
 
   li {
+    position: relative;
+    top: 1px;
     float: left;
     @include border(left, 1px, solid, $secondary-color);
 

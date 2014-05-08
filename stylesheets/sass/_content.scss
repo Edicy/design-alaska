@@ -1,7 +1,12 @@
 /* CONTENT */
 .content {
   .content-header {
+    @include border(top, 1px, solid, $secondary-color);
     @include border(bottom, 1px, solid, $secondary-color);
+
+    &:first-child {
+      border-top: none;
+    }
 
     .wrap {
       max-width: 520px;

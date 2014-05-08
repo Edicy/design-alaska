@@ -25,23 +25,19 @@
         {% if editmode %}<div class="post-add-btn wrap">{% addbutton %}</div>{% endif %}
 
         {% for article in articles %}
-          <article class="post post-position">
-            <a class="post-top" href="{{ article.url }}">
-              {% if article.data.post_image %}<div class="background-image" style="background-image: url('{{ article.data.post_image }}');"></div>{% endif %}
-              {% if article.data.post_color %}<div class="background-color" style="background-color: {{ article.data.post_color }};{% if article.data.post_image %} opacity: 0.5;{% endif %}"></div>{% endif %}
-
+          <article class="post">
+            <div class="wrap">
               <header class="post-header">
-                <h2 class="post-title">{{ article.title }}</h2>
+                <h2 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
+                {% include "tags-post" %}
               </header>
-            </a>
 
-            <div class="post-bottom">
-              <section class="post-content">
+              <div class="post-content">
                 <div class="post-excerpt content-formatted">{{ article.excerpt }}</div>
-              </section>
+              </div>
 
               <footer class="post-footer">
-                <time class="post-date" datetime="{{ article.created_at | date : '%Y-%m-%d' }}">{{ article.created_at | date : "%B %d, %Y" }}</time>
+                <time class="post-date" datetime="{{ article.created_at | date : "%Y-%m-%d" }}">{{ article.created_at | date : "%b %d, %Y" }}</time>
               </footer>
             </div>
           </article>
