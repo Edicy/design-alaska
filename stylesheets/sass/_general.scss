@@ -51,7 +51,6 @@ body {
   margin: 0 auto;
 }
 
-// Styling rules for the site's editable content areas.
 .content-formatted {
   @extend %clearfix;
   h1,
@@ -146,15 +145,13 @@ body {
   pre,
   code {
     margin-top: 0;
-  }
-
-  pre,
-  code {
+    padding: 10px;
     display: block;
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
     font-size: 14px;
+    @include bg($grey-3);
   }
 
   .edy-texteditor-view {
