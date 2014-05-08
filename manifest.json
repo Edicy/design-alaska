@@ -1,1 +1,343 @@
-{"description":"New design","name":"New design","preview_medium":"","preview_small":"","author":"","layouts":[{"content_type":"page","component":false,"file":"layouts/blog___news.tpl","layout_name":"page_default","title":"Blog & News"},{"content_type":"page","component":false,"file":"layouts/blog_article.tpl","layout_name":"page_default","title":"Blog article"},{"content_type":"page","component":false,"file":"layouts/common_page.tpl","layout_name":"page_default","title":"Common page"},{"content_type":"page","component":false,"file":"layouts/front_page.tpl","layout_name":"page_default","title":"Front page"},{"content_type":"component","component":true,"file":"components/bg-picker.tpl","layout_name":"","title":"bg-picker"},{"content_type":"component","component":true,"file":"components/comment-form.tpl","layout_name":"","title":"comment-form"},{"content_type":"component","component":true,"file":"components/footer.tpl","layout_name":"","title":"footer"},{"content_type":"component","component":true,"file":"components/header.tpl","layout_name":"","title":"header"},{"content_type":"component","component":true,"file":"components/html-head.tpl","layout_name":"","title":"html-head"},{"content_type":"component","component":true,"file":"components/javascripts.tpl","layout_name":"","title":"javascripts"},{"content_type":"component","component":true,"file":"components/menu-lang-mobile.tpl","layout_name":"","title":"menu-lang-mobile"},{"content_type":"component","component":true,"file":"components/menu-lang.tpl","layout_name":"","title":"menu-lang"},{"content_type":"component","component":true,"file":"components/menu-level-1.tpl","layout_name":"","title":"menu-level-1"},{"content_type":"component","component":true,"file":"components/menu-level-2.tpl","layout_name":"","title":"menu-level-2"},{"content_type":"component","component":true,"file":"components/post-box.tpl","layout_name":"","title":"post-box"},{"content_type":"component","component":true,"file":"components/search.tpl","layout_name":"","title":"search"},{"content_type":"component","component":true,"file":"components/sidebar.tpl","layout_name":"","title":"sidebar"},{"content_type":"component","component":true,"file":"components/tags-blog.tpl","layout_name":"","title":"tags-blog"},{"content_type":"component","component":true,"file":"components/tags-post.tpl","layout_name":"","title":"tags-post"},{"content_type":"component","component":true,"file":"components/topbar.tpl","layout_name":"","title":"topbar"},null,null],"assets":[{"content_type":"unknown/unknown","file":"assets/.DS_Store","kind":"assets","filename":".DS_Store"},{"content_type":"unknown/unknown","file":"assets/aktivgrotesk-corp-bold.eot","kind":"assets","filename":"aktivgrotesk-corp-bold.eot"},{"content_type":"unknown/unknown","file":"assets/aktivgrotesk-corp-bold.svg","kind":"assets","filename":"aktivgrotesk-corp-bold.svg"},{"content_type":"unknown/unknown","file":"assets/aktivgrotesk-corp-bold.ttf","kind":"assets","filename":"aktivgrotesk-corp-bold.ttf"},{"content_type":"unknown/unknown","file":"assets/aktivgrotesk-corp-bold.woff","kind":"assets","filename":"aktivgrotesk-corp-bold.woff"},{"content_type":"unknown/unknown","file":"assets/aktivgrotesk-corp-reguar.svg","kind":"assets","filename":"aktivgrotesk-corp-reguar.svg"},{"content_type":"unknown/unknown","file":"assets/aktivgrotesk-corp-regular.eot","kind":"assets","filename":"aktivgrotesk-corp-regular.eot"},{"content_type":"unknown/unknown","file":"assets/aktivgrotesk-corp-regular.ttf","kind":"assets","filename":"aktivgrotesk-corp-regular.ttf"},{"content_type":"unknown/unknown","file":"assets/aktivgrotesk-corp-regular.woff","kind":"assets","filename":"aktivgrotesk-corp-regular.woff"},{"content_type":"unknown/unknown","file":"assets/ico-flags.svg","kind":"assets","filename":"ico-flags.svg"},{"content_type":"unknown/unknown","file":"assets/metaserifpro-book-italic.eot","kind":"assets","filename":"metaserifpro-book-italic.eot"},{"content_type":"unknown/unknown","file":"assets/metaserifpro-book-italic.svg","kind":"assets","filename":"metaserifpro-book-italic.svg"},{"content_type":"unknown/unknown","file":"assets/metaserifpro-book-italic.ttf","kind":"assets","filename":"metaserifpro-book-italic.ttf"},{"content_type":"unknown/unknown","file":"assets/metaserifpro-book-italic.woff","kind":"assets","filename":"metaserifpro-book-italic.woff"},{"content_type":"unknown/unknown","file":"assets/metaserifpro-book-regular.eot","kind":"assets","filename":"metaserifpro-book-regular.eot"},{"content_type":"unknown/unknown","file":"assets/metaserifpro-book-regular.svg","kind":"assets","filename":"metaserifpro-book-regular.svg"},{"content_type":"unknown/unknown","file":"assets/metaserifpro-book-regular.ttf","kind":"assets","filename":"metaserifpro-book-regular.ttf"},{"content_type":"unknown/unknown","file":"assets/metaserifpro-book-regular.woff","kind":"assets","filename":"metaserifpro-book-regular.woff"},{"content_type":"image/DS_Store","file":"images/.DS_Store","kind":"images","filename":".DS_Store"},{"content_type":"image/png","file":"images/ico-flags.png","kind":"images","filename":"ico-flags.png"},{"content_type":"text/javascript","file":"javascripts/.DS_Store","kind":"javascripts","filename":".DS_Store"},{"content_type":"text/javascript","file":"javascripts/autogrow.js","kind":"javascripts","filename":"autogrow.js"},{"content_type":"text/javascript","file":"javascripts/jquery.js","kind":"javascripts","filename":"jquery.js"},{"content_type":"text/javascript","file":"javascripts/main.js","kind":"javascripts","filename":"main.js"},{"content_type":"text/javascript","file":"javascripts/modernizr.js","kind":"javascripts","filename":"modernizr.js"},{"content_type":"text/javascript","file":"javascripts/overthrow.js","kind":"javascripts","filename":"overthrow.js"},{"content_type":"text/javascript","file":"javascripts/retina.js","kind":"javascripts","filename":"retina.js"},{"content_type":"text/css","file":"stylesheets/.DS_Store","kind":"stylesheets","filename":".DS_Store"},{"content_type":"text/css","file":"stylesheets/ie8.css","kind":"stylesheets","filename":"ie8.css"},{"content_type":"text/css","file":"stylesheets/main.css","kind":"stylesheets","filename":"main.css"},{"content_type":"text/css","file":"stylesheets/sass","kind":"stylesheets","filename":"sass"}]}
+{
+  "description": "New design",
+  "name": "New design",
+  "preview_medium": "",
+  "preview_small": "",
+  "author": "",
+  "layouts": [
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/blog___news.tpl",
+      "layout_name": "page_default",
+      "title": "Blog & News"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/blog_article.tpl",
+      "layout_name": "page_default",
+      "title": "Blog article"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/common_page.tpl",
+      "layout_name": "page_default",
+      "title": "Common page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_default",
+      "title": "Front page"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/bg-picker.tpl",
+      "layout_name": "",
+      "title": "bg-picker"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/comment-form.tpl",
+      "layout_name": "",
+      "title": "comment-form"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/footer.tpl",
+      "layout_name": "",
+      "title": "footer"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/header.tpl",
+      "layout_name": "",
+      "title": "header"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/html-head.tpl",
+      "layout_name": "",
+      "title": "html-head"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/javascripts.tpl",
+      "layout_name": "",
+      "title": "javascripts"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-lang-mobile.tpl",
+      "layout_name": "",
+      "title": "menu-lang-mobile"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-lang.tpl",
+      "layout_name": "",
+      "title": "menu-lang"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-1.tpl",
+      "layout_name": "",
+      "title": "menu-level-1"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-2.tpl",
+      "layout_name": "",
+      "title": "menu-level-2"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/post-box.tpl",
+      "layout_name": "",
+      "title": "post-box"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/search.tpl",
+      "layout_name": "",
+      "title": "search"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/sidebar.tpl",
+      "layout_name": "",
+      "title": "sidebar"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-blog.tpl",
+      "layout_name": "",
+      "title": "tags-blog"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-post.tpl",
+      "layout_name": "",
+      "title": "tags-post"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/topbar.tpl",
+      "layout_name": "",
+      "title": "topbar"
+    }
+  ],
+  "assets": [
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/.DS_Store",
+      "kind": "assets",
+      "filename": ".DS_Store"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/aktivgrotesk-corp-bold.eot",
+      "kind": "assets",
+      "filename": "aktivgrotesk-corp-bold.eot"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/aktivgrotesk-corp-bold.svg",
+      "kind": "assets",
+      "filename": "aktivgrotesk-corp-bold.svg"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/aktivgrotesk-corp-bold.ttf",
+      "kind": "assets",
+      "filename": "aktivgrotesk-corp-bold.ttf"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/aktivgrotesk-corp-bold.woff",
+      "kind": "assets",
+      "filename": "aktivgrotesk-corp-bold.woff"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/aktivgrotesk-corp-reguar.svg",
+      "kind": "assets",
+      "filename": "aktivgrotesk-corp-reguar.svg"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/aktivgrotesk-corp-regular.eot",
+      "kind": "assets",
+      "filename": "aktivgrotesk-corp-regular.eot"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/aktivgrotesk-corp-regular.ttf",
+      "kind": "assets",
+      "filename": "aktivgrotesk-corp-regular.ttf"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/aktivgrotesk-corp-regular.woff",
+      "kind": "assets",
+      "filename": "aktivgrotesk-corp-regular.woff"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/ico-arrow-down.svg",
+      "kind": "assets",
+      "filename": "ico-arrow-down.svg"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/ico-flags.svg",
+      "kind": "assets",
+      "filename": "ico-flags.svg"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-italic.eot",
+      "kind": "assets",
+      "filename": "metaserifpro-book-italic.eot"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-italic.svg",
+      "kind": "assets",
+      "filename": "metaserifpro-book-italic.svg"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-italic.ttf",
+      "kind": "assets",
+      "filename": "metaserifpro-book-italic.ttf"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-italic.woff",
+      "kind": "assets",
+      "filename": "metaserifpro-book-italic.woff"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-regular.eot",
+      "kind": "assets",
+      "filename": "metaserifpro-book-regular.eot"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-regular.svg",
+      "kind": "assets",
+      "filename": "metaserifpro-book-regular.svg"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-regular.ttf",
+      "kind": "assets",
+      "filename": "metaserifpro-book-regular.ttf"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-regular.woff",
+      "kind": "assets",
+      "filename": "metaserifpro-book-regular.woff"
+    },
+    {
+      "content_type": "image/DS_Store",
+      "file": "images/.DS_Store",
+      "kind": "images",
+      "filename": ".DS_Store"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-arrow-down.png",
+      "kind": "images",
+      "filename": "ico-arrow-down.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-flags.png",
+      "kind": "images",
+      "filename": "ico-flags.png"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/.DS_Store",
+      "kind": "javascripts",
+      "filename": ".DS_Store"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/jquery.js",
+      "kind": "javascripts",
+      "filename": "jquery.js"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/main.js",
+      "kind": "javascripts",
+      "filename": "main.js"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/modernizr.js",
+      "kind": "javascripts",
+      "filename": "modernizr.js"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/overthrow.js",
+      "kind": "javascripts",
+      "filename": "overthrow.js"
+    },
+    {
+      "content_type": "text/javascript",
+      "file": "javascripts/retina.js",
+      "kind": "javascripts",
+      "filename": "retina.js"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/.DS_Store",
+      "kind": "stylesheets",
+      "filename": ".DS_Store"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/ie8.css",
+      "kind": "stylesheets",
+      "filename": "ie8.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/main.css",
+      "kind": "stylesheets",
+      "filename": "main.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/sass",
+      "kind": "stylesheets",
+      "filename": "sass"
+    }
+  ]
+}
