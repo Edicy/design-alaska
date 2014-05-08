@@ -17,19 +17,32 @@
     {% include "header" %}
 
     <main class="content" role="main">
-      {% include "post-box" with "article" %}
+      <article class="post">
+        <header class="post-header">
+          <div class="wrap">
+            <h2 class="post-title">{% editable article.title %}</h2>
+          </div>
+        </header>
 
-      <section class="comments content-formatted">
-        {% case article.comments_count %}{% when 0 %}{% else %}<h2 class="comments-title">{{ "comments_for_count" | lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></h2>{% endcase %}
-
-        <section class="comment-messages content-formatted">
-          {% for comment in article.comments reversed %}
-            <div class="comment">{{ comment.body }} ({{ comment.author }}, {{ comment.created_at | date : "%b %d, %Y" }})</div>
-          {% endfor %}
+        <section class="post-body">
+          <div class="wrap">
+            <div class="post-excerpt content-formatted">{% editable article.excerpt %}</div>
+            <div class="post-body content-formatted">{% editable article.body%}</div>
+          </div>
         </section>
 
-        {% include "comment-form" %}
-      </section>
+        <section class="comments content-formatted">
+          {% case article.comments_count %}{% when 0 %}{% else %}<h2 class="comments-title">{{ "comments_for_count" | lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></h2>{% endcase %}
+
+          <section class="comment-messages content-formatted">
+            {% for comment in article.comments reversed %}
+              <div class="comment">{{ comment.body }} ({{ comment.author }}, {{ comment.created_at | date : "%b %d, %Y" }})</div>
+            {% endfor %}
+          </section>
+
+          {% include "comment-form" %}
+        </section>
+      </article>
     </main>
 
     {% include "footer" %}

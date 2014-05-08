@@ -24,9 +24,9 @@
       <!-- TODO: Custom image area -->
       <!-- <section class="content-images"></section> -->
 
-      <section class="content-body">
-        <div class="wrap content-formatted">{% content %}</div>
-      </section>
+      <div class="content-body">
+        <section class="wrap content-formatted">{% content %}</section>
+      </div>
     </main>
 
     {% include "footer" %}
