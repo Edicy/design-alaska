@@ -19,13 +19,32 @@
     {% include "header" %}
 
     <main class="content" role="main">
-      <section class="content-body">
+      <section class="blog">
         {% include "tags-blog" %}
 
         {% if editmode %}<div class="post-add-btn wrap">{% addbutton %}</div>{% endif %}
 
         {% for article in articles %}
-          {% include "post-box" %}
+          <article class="post post-position">
+            <a class="post-top" href="{{ article.url }}">
+              {% if article.data.post_image %}<div class="background-image" style="background-image: url('{{ article.data.post_image }}');"></div>{% endif %}
+              {% if article.data.post_color %}<div class="background-color" style="background-color: {{ article.data.post_color }};{% if article.data.post_image %} opacity: 0.5;{% endif %}"></div>{% endif %}
+
+              <header class="post-header">
+                <h2 class="post-title">{{ article.title }}</h2>
+              </header>
+            </a>
+
+            <div class="post-bottom">
+              <section class="post-content">
+                <div class="post-excerpt content-formatted">{{ article.excerpt }}</div>
+              </section>
+
+              <footer class="post-footer">
+                <time class="post-date" datetime="{{ article.created_at | date : '%Y-%m-%d' }}">{{ article.created_at | date : "%B %d, %Y" }}</time>
+              </footer>
+            </div>
+          </article>
         {% endfor %}
       </section>
     </main>

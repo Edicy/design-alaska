@@ -1,16 +1,8 @@
 <article class="post">
-  <div class="wrap">
-    <header class="post-header">
-      <h2 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
-      {% include "tags-post" %}
-    </header>
+  <a class="post-header" href="{{ article.url }}">
+    <div class="post-cover-image" style="background-image: url('{{ photos_path }}/gallery-1.jpg');"></div>
+    <h2 class="post-title">{{ article.title }}</h2>
+  </a>
 
-    <div class="post-content">
-      <div class="post-excerpt content-formatted">{{ article.excerpt }}</div>
-    </div>
-
-    <footer class="post-footer">
-      <time class="post-date" datetime="{{ article.created_at | date : "%Y-%m-%d" }}">{{ article.created_at | date : "%b %d, %Y" }}</time>
-    </footer>
-  </div>
+  <div class="post-body">{{ article.excerpt }}</div>
 </article>

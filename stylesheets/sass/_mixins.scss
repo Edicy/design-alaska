@@ -70,6 +70,14 @@
           border-radius: 0;
 }
 
+// OPACITY
+@mixin opacity($value){
+  $IEValue: $value*100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
+
 // MEDIA QUERY
 @mixin query($value: $tablet-1) {
   @media screen and (max-width: $value) {

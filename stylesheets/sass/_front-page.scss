@@ -1,1 +1,57 @@
 /* FRONT PAGE */
+.front-page {
+  .wrap {
+    max-width: 1000px;
+  }
+
+  .blog {
+    .wrap {
+      @extend %clearfix;
+    }
+
+    .blog-inner {
+      @extend %clearfix;
+      float: left;
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .post {
+      float: left;
+      width: 235px;
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+
+    .post-header {
+      display: block;
+      text-decoration: none;
+      @include color($primary-color);
+
+      &:hover {
+        text-decoration: underline;
+
+        .post-cover-image {
+          @include opacity(0.8);
+        }
+      }
+    }
+
+    .post-cover-image {
+      width: 235px;
+      height: 235px;
+      background-size: cover;
+    }
+
+    .post-title {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  }
+}

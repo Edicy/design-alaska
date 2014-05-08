@@ -1,4 +1,11 @@
 /* BLOG & BLOG ARTICLE */
+.blog {
+  .post-title,
+  .post-date {
+    font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
 .blog-page {
   .post-add-btn {
     text-align: center;
@@ -10,11 +17,6 @@
     &:first-child {
       border: none;
     }
-  }
-
-  .post-title,
-  .post-date {
-    font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   .post-title {
