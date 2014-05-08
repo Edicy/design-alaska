@@ -22,7 +22,7 @@
       <section class="content-body">
         {% include "tags-blog" %}
 
-        <div class="post-add-btn wrap">{% addbutton %}</div>
+        {% if editmode %}<div class="post-add-btn wrap">{% addbutton %}</div>{% endif %}
 
         {% for article in articles %}
           {% include "post-box" %}
