@@ -1,0 +1,43 @@
+/* HEADER */
+.header {
+  .header-banner {
+    min-height: 600px;
+    text-align: center;
+    @include color($white);
+    background-size: cover;
+
+    .wrap {
+      display: table;
+      max-width: 620px;
+      height: 600px;
+      margin: 0 auto;
+    }
+
+    .align-middle {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  .header-title {
+    font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 44px;
+
+    &,
+    a {
+      @include color($white);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .header-slogan {
+    margin-top: 15px;
+    padding: 13px 32px 18px;
+    font-style: italic;
+    font-size: 24px;
+    @include border(all, 1px, solid, $white);
+  }
+}
