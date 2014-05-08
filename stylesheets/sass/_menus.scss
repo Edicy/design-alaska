@@ -121,7 +121,8 @@
           @include color($white);
         }
 
-        &.active {
+        &.active,
+        &.active:hover {
           @include bg($third-color);
         }
 
