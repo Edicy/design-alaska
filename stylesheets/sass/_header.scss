@@ -1,9 +1,10 @@
 /* HEADER */
 .header {
   .header-banner {
-    min-height: 600px;
+    position: relative;
     text-align: center;
     @include color($white);
+    background-image: url('../photos/header-bg.jpg');
     background-size: cover;
 
     .wrap {
