@@ -13,21 +13,21 @@
       width: 270px;
     }
 
-    .header-title {
-      padding: 19px 0;
-      font-weight: 700;
-      font-size: 26px;
-
-      &,
-      a {
-        text-decoration: none;
-        @include color($primary-color);
-      }
-    }
-
     .header-right {
       width: 650px;
       text-align: right;
+    }
+  }
+
+  .header-title {
+    padding: 19px 0;
+    font-weight: 700;
+    font-size: 26px;
+
+    &,
+    a {
+      text-decoration: none;
+      @include color($primary-color);
     }
   }
 }

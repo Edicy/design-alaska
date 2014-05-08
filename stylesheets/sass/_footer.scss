@@ -23,17 +23,17 @@
       width: 650px;
       text-align: right;
     }
+  }
 
-    .footer-title {
-      padding: 19px 0;
-      font-weight: 700;
-      font-size: 26px;
+  .footer-title {
+    padding: 19px 0;
+    font-weight: 700;
+    font-size: 26px;
 
-      &,
-      a {
-        text-decoration: none;
-        @include color($primary-color);
-      }
+    &,
+    a {
+      text-decoration: none;
+      @include color($primary-color);
     }
   }
 
