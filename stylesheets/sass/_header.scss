@@ -9,12 +9,8 @@
     max-width: 960px;
     padding: 0 20px;
 
-    .header-left,
-    .header-right {
-      @include flex;
-    }
-
     .header-left {
+      width: 270px;
     }
 
     .header-title {
@@ -30,6 +26,7 @@
     }
 
     .header-right {
+      width: 650px;
       text-align: right;
     }
   }
