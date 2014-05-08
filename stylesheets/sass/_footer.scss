@@ -1,1 +1,60 @@
 /* FOOTER */
+.footer {
+  min-height: 87px;
+  font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @include border(top, 1px, solid, $secondary-color);
+
+  .wrap {
+    @include flexbox;
+    max-width: 960px;
+    padding: 30px 20px;
+    font-size: 18px;
+
+    .footer-left,
+    .footer-right {
+    }
+
+    .footer-left {
+      width: 310px;
+      font-weight: 700;
+    }
+
+    .footer-right {
+      width: 650px;
+      text-align: right;
+    }
+
+    .footer-title {
+      padding: 19px 0;
+      font-weight: 700;
+      font-size: 26px;
+
+      &,
+      a {
+        text-decoration: none;
+        @include color($primary-color);
+      }
+    }
+  }
+
+  .voog-reference {
+    padding: 0 20px 30px;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      padding: 7px 9px;
+      text-decoration: none;
+      font-size: 10px;
+      line-height: 1;
+      @include color($grey-2, 0.75);
+      @include bg($white);
+      @include border(all, 1px, solid, $black, 0.1);
+
+      &:hover {
+        @include color($grey-2, 0.75);
+        @include border(all, 1px, solid, $black, 0.75);
+      }
+    }
+  }
+}
