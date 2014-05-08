@@ -11,7 +11,6 @@
 </head>
 
 <body class="front-page">
-
   <div class="container">
     {% include "header" %}
 
