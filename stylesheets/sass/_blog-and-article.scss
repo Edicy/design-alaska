@@ -1,1 +1,45 @@
 /* BLOG & BLOG ARTICLE */
+.blog-page {
+  .post-add-btn {
+    text-align: center;
+  }
+
+  .post {
+    @include border(top, 1px, solid, $secondary-color);
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .post-title,
+  .post-date {
+    font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .post-title {
+    margin: 0;
+    font-size: 24px;
+
+    a {
+      @include color($primary-color);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .post-excerpt,
+  .post-body {
+    margin-top: 18px;
+  }
+
+  .post-date {
+    display: block;
+    margin-top: 38px;
+    font-size: 16px;
+    @include color($secondary-color);
+  }
+}

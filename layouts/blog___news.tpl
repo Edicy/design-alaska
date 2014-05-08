@@ -19,11 +19,15 @@
     {% include "header" %}
 
     <main class="content" role="main">
-      {% include "tags-blog" %}
+      <section class="content-body">
+        {% include "tags-blog" %}
 
-      {% for article in articles %}
-        {% include "post-box" %}
-      {% endfor %}
+        <div class="post-add-btn wrap">{% addbutton %}</div>
+
+        {% for article in articles %}
+          {% include "post-box" %}
+        {% endfor %}
+      </section>
     </main>
 
     {% include "footer" %}
