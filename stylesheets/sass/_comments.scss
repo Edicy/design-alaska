@@ -1,1 +1,31 @@
 /* COMMENTS */
+.comments {
+  @include border(top, 1px, solid, $secondary-color);
+
+  .comment-title,
+  .comment,
+  .comment-form {
+    margin-top: 25px;
+  }
+
+  .form_field_small {
+    display: inline-block;
+    width: 100%;
+    max-width: 335px;
+    margin-left: 25px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .form_field_textfield {
+      width: 100%;
+    }
+  }
+
+  .form_field_large {
+    .form_field_textarea {
+      width: 100%;
+    }
+  }
+}
