@@ -120,8 +120,6 @@ body {
   p,
   ul,
   img,
-  pre,
-  code,
   table {
     &:first-child {
       margin-top: 0;
@@ -202,13 +200,19 @@ body {
 
   pre,
   code {
-    margin-top: 0;
-    padding: 10px;
-    overflow: auto;
-    white-space: nowrap;
     padding: 10px;
     font-size: 14px;
     @include bg($grey-3);
+  }
+
+  pre {
+    margin: 0;
+    overflow: auto;
+    white-space: nowrap;
+
+    code {
+      display: block;
+    }
   }
 
   .edy-texteditor-view {

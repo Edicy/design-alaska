@@ -207,8 +207,6 @@ body {
 .content-formatted p:first-child,
 .content-formatted ul:first-child,
 .content-formatted img:first-child,
-.content-formatted pre:first-child,
-.content-formatted code:first-child,
 .content-formatted table:first-child {
   margin-top: 0;
 }
@@ -265,13 +263,17 @@ body {
 }
 .content-formatted pre,
 .content-formatted code {
-  margin-top: 0;
-  padding: 10px;
-  overflow: auto;
-  white-space: nowrap;
   padding: 10px;
   font-size: 14px;
   background-color: #fafafa;
+}
+.content-formatted pre {
+  margin: 0;
+  overflow: auto;
+  white-space: nowrap;
+}
+.content-formatted pre code {
+  display: block;
 }
 .content-formatted .edy-texteditor-view {
   min-height: 21px;
