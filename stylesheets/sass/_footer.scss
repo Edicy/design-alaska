@@ -1,7 +1,7 @@
 /* FOOTER */
 .footer {
+  @extend %aktiv-grotesk;
   min-height: 87px;
-  font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   @include border(top, 1px, solid, $secondary-color);
 
   .wrap {
