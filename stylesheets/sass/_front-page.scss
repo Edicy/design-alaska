@@ -4,6 +4,28 @@
     max-width: 1000px;
   }
 
+  .custom-gallery {
+  }
+
+  .gallery-inner {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .gallery-left {
+    .custom-image {
+      display: inline-block;
+      vertical-align: top;
+      width: 235px;
+      height: 235px;
+      background-size: cover;
+    }
+  }
+
+  .gallery-right {
+
+  }
+
   .blog {
     .wrap {
       @extend %clearfix;
