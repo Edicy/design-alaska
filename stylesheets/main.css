@@ -267,7 +267,6 @@ body {
 .content-formatted code {
   margin-top: 0;
   padding: 10px;
-  display: block;
   overflow: auto;
   white-space: nowrap;
   padding: 10px;
