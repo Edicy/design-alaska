@@ -318,15 +318,16 @@
       position: relative;
       display: block;
       padding: 6px 40px 3px 13px;
-      @include color($secondary-color, 0.67);
+      @include color($primary-color);
 
       &.active,
       &.active:hover {
-        // @include bg($grey-2);
+        @include color($white);
+        @include bg($primary-color);
       }
 
       &:hover {
-        // @include bg($grey-2, 0.5);
+        @include bg($primary-color, 0.8);
       }
 
       &:before,
@@ -556,13 +557,18 @@
     a {
       padding: 15px 20px;
 
-      &.active {
+      &.active,
+      &:hover {
         @include color($white);
+      }
+
+      &.active,
+      &.active:hover {
         @include bg($primary-color);
       }
 
       &:hover {
-        @include bg($secondary-color, 0.8);
+        @include bg($primary-color, 0.8);
       }
     }
   }
