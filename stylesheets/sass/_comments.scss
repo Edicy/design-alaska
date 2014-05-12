@@ -6,6 +6,10 @@
   .comment,
   .comment-form {
     margin-top: 25px;
+
+    @include query($mobile-2) {
+      margin-top: 0;
+    }
   }
 
   .form_field_small {
@@ -16,6 +20,15 @@
 
     &:first-child {
       margin-left: 0;
+    }
+
+    @include query($tablet-3) {
+      display: block;
+      margin-left: 0;
+    }
+
+    @include query($mobile-2) {
+      max-width: 100%;
     }
 
     .form_field_textfield {

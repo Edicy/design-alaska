@@ -1150,6 +1150,13 @@ body {
 .comments .comment-form {
   margin-top: 25px;
 }
+@media screen and (max-width: 480px) {
+  .comments .comment-title,
+  .comments .comment,
+  .comments .comment-form {
+    margin-top: 0;
+  }
+}
 .comments .form_field_small {
   display: inline-block;
   width: 100%;
@@ -1158,6 +1165,17 @@ body {
 }
 .comments .form_field_small:first-child {
   margin-left: 0;
+}
+@media screen and (max-width: 752px) {
+  .comments .form_field_small {
+    display: block;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .comments .form_field_small {
+    max-width: 100%;
+  }
 }
 .comments .form_field_small .form_field_textfield {
   width: 100%;
