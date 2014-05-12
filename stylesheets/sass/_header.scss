@@ -12,6 +12,14 @@
       max-width: 620px;
       height: 600px;
       margin: 0 auto;
+
+      @include query($tablet-2) {
+        height: 340px;
+      }
+
+      @include query($mobile-2) {
+        height: 215px;
+      }
     }
 
     .align-middle {
@@ -35,7 +43,6 @@
   }
 
   .header-slogan {
-    min-width: 580px;
     min-height: 56px;
     margin-top: 15px;
     padding: 14px 32px 18px;

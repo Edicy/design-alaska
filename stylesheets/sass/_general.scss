@@ -30,6 +30,11 @@ body {
   bottom: 0;
 }
 
+%inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .loading-status {
   text-align: center;
 }

@@ -14,8 +14,7 @@
 
   .gallery-left {
     .custom-image {
-      display: inline-block;
-      vertical-align: top;
+      @extend %inline-block;
       width: 235px;
       height: 235px;
       background-size: cover;
@@ -28,26 +27,47 @@
 
   .blog {
     .wrap {
-      @extend %clearfix;
+
     }
 
-    .blog-inner {
-      @extend %clearfix;
-      float: left;
-      margin-left: 20px;
+    .blog-inner,
+    .post {
+      margin-left: 16px;
 
       &:first-child {
         margin-left: 0;
       }
     }
 
-    .post {
-      float: left;
-      width: 235px;
-      margin-left: 20px;
+    .blog-inner {
+      @extend %inline-block;
 
-      &:first-child {
-        margin-left: 0px;
+      @include query($tablet-1) {
+        display: block;
+        margin-top: 50px;
+        margin-left: 0;
+        text-align: center;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .post {
+      @extend %inline-block;
+      width: 235px;
+
+      @include query($mobile-1) {
+        display: block;
+
+        & {
+          margin: 50px auto 0;
+        }
+
+        &:first-child {
+          margin: 0 auto 10px;
+        }
       }
     }
 

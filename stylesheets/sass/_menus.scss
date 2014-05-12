@@ -2,9 +2,9 @@
 .menu-btn {
   display: none;
 
-  @include query($tablet-2) {
+  @include query($tablet-3) {
     position: absolute;
-    top: 46px;
+    top: 24px;
     right: 20px;
     display: inline-block;
     margin: 0;
@@ -69,11 +69,10 @@
 }
 
 .menu-main {
-  display: inline-block;
-  vertical-align: top;
+  @extend %inline-block;
   @include border(right, 1px, solid, $secondary-color);
 
-  @include query($tablet-2) {
+  @include query($tablet-3) {
     display: none;
 
     &.expanded {
@@ -85,7 +84,7 @@
       text-align: left;
       @include bg($white);
 
-      @include query($mobile-1) {
+      @include query($mobile-2) {
         top: 0;
         left: 0;
         right: 0;
@@ -118,7 +117,7 @@
     &:first-child {
     }
 
-    @include query($tablet-2) {
+    @include query($tablet-3) {
       display: block;
       margin: 0;
       font-size: 20px;
@@ -147,7 +146,7 @@
 
     }
 
-    @include query($tablet-2) {
+    @include query($tablet-3) {
       display: block;
       padding: 7px 25px 3px;
 
@@ -160,7 +159,7 @@
   .menu-lang {
     display: none;
 
-    @include query($tablet-2) {
+    @include query($tablet-3) {
       display: block;
       padding-left: 0;
 
@@ -213,9 +212,8 @@
 }
 
 .menu-lang-btn {
+  @extend %inline-block;
   position: relative;
-  display: inline-block;
-  vertical-align: top;
   width: 20px;
   height: 13px;
   padding: 35px;
@@ -291,14 +289,13 @@
 }
 
 .menu-lang {
+  @extend %inline-block;
   position: relative;
-  display: inline-block;
-  vertical-align: top;
   margin-left: -5px;
   line-height: 0;
   @include border(right, 1px, solid, $secondary-color);
 
-  @include query($tablet-2) {
+  @include query($tablet-3) {
     display: none;
   }
 
@@ -528,8 +525,7 @@
   }
 
   li {
-    display: inline-block;
-    vertical-align: top;
+    @extend %inline-block;
     margin-left: -1px;
     @include border(left, 1px, solid, $secondary-color);
     @include border(right, 1px, solid, $secondary-color);

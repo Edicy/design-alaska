@@ -10,9 +10,10 @@
     padding: 30px 20px;
     font-size: 18px;
 
-    .footer-left,
-    .footer-right {
+    @include query($mobile-1) {
+      display: block;
     }
+
 
     .footer-left {
       width: 310px;
@@ -22,6 +23,18 @@
     .footer-right {
       width: 650px;
       text-align: right;
+
+      @include query($mobile-1) {
+        margin-top: 20px;
+      }
+    }
+
+    .footer-left,
+    .footer-right {
+      @include query($mobile-1) {
+        width: auto;
+        text-align: center;
+      }
     }
   }
 
