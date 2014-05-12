@@ -149,12 +149,6 @@
   "assets": [
     {
       "content_type": "unknown/unknown",
-      "file": "assets/.DS_Store",
-      "kind": "assets",
-      "filename": ".DS_Store"
-    },
-    {
-      "content_type": "unknown/unknown",
       "file": "assets/aktivgrotesk-corp-bold.eot",
       "kind": "assets",
       "filename": "aktivgrotesk-corp-bold.eot"
@@ -262,12 +256,6 @@
       "filename": "metaserifpro-book-regular.woff"
     },
     {
-      "content_type": "image/DS_Store",
-      "file": "images/.DS_Store",
-      "kind": "images",
-      "filename": ".DS_Store"
-    },
-    {
       "content_type": "image/png",
       "file": "images/ico-arrow-down.png",
       "kind": "images",
@@ -281,9 +269,9 @@
     },
     {
       "content_type": "text/javascript",
-      "file": "javascripts/.DS_Store",
+      "file": "javascripts/articlePages.js",
       "kind": "javascripts",
-      "filename": ".DS_Store"
+      "filename": "articlePages.js"
     },
     {
       "content_type": "text/javascript",
@@ -317,12 +305,6 @@
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/.DS_Store",
-      "kind": "stylesheets",
-      "filename": ".DS_Store"
-    },
-    {
-      "content_type": "text/css",
       "file": "stylesheets/ie8.css",
       "kind": "stylesheets",
       "filename": "ie8.css"
@@ -332,12 +314,6 @@
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
-    },
-    {
-      "content_type": "text/css",
-      "file": "stylesheets/sass",
-      "kind": "stylesheets",
-      "filename": "sass"
     }
   ]
 }
