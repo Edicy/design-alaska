@@ -38,7 +38,7 @@
               {% endfor %}
             </section>
 
-            {% include "comment-form" %}
+            {% unless article.new_record? %}{% include "comment-form" %}{% endunless %}
           </div>
         </section>
       </article>

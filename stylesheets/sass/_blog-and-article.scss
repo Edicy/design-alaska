@@ -2,13 +2,14 @@
 .blog {
   .post-title,
   .post-date {
-    font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @extend %aktiv-grotesk;
   }
 }
 
 .blog-page {
   .post-add-btn {
     text-align: center;
+    @include border(bottom, 1px, solid, $secondary-color);
   }
 
   .post {
