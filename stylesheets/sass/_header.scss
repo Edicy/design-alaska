@@ -21,7 +21,7 @@
   }
 
   .header-title {
-    font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @extend %aktiv-grotesk;
     font-size: 44px;
 
     &,
@@ -35,8 +35,10 @@
   }
 
   .header-slogan {
+    min-width: 580px;
+    min-height: 56px;
     margin-top: 15px;
-    padding: 13px 32px 18px;
+    padding: 14px 32px 18px;
     font-style: italic;
     font-size: 24px;
     @include border(all, 1px, solid, $white);
