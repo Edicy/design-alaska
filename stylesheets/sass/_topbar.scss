@@ -6,9 +6,25 @@
   @include border(bottom, 1px, solid, $secondary-color);
 
   .wrap {
-    @include flexbox;
-    max-width: 960px;
     padding: 0 20px;
+
+    .no-flexbox & {
+      display: table;
+      max-width: 1000px;
+    }
+
+    .flexbox & {
+      @include flexbox;
+      max-width: 960px;
+    }
+  }
+
+  .topbar-left,
+  .topbar-right {
+    .no-flexbox & {
+      display: table-cell;
+      vertical-align: top;
+    }
   }
 
   .topbar-left {

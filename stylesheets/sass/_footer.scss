@@ -5,13 +5,24 @@
   @include border(top, 1px, solid, $secondary-color);
 
   .wrap {
-    @include flexbox;
-    max-width: 960px;
     padding: 30px 20px;
     font-size: 18px;
 
+    .no-flexbox & {
+      display: table;
+      max-width: 1000px;
+    }
+
+    .flexbox & {
+      @include flexbox;
+      max-width: 960px;
+    }
+
     @include query($mobile-1) {
-      display: block;
+      .no-flexbox &,
+      .flexbox & {
+        display: block;
+      }
     }
 
 
@@ -31,6 +42,10 @@
 
     .footer-left,
     .footer-right {
+      .no-flexbox & {
+        display: table-cell;
+        vertical-align: top;
+      }
       @include query($mobile-1) {
         width: auto;
         text-align: center;
