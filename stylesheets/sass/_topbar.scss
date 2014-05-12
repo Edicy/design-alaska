@@ -2,7 +2,7 @@
 .topbar {
   min-height: 69px;
   margin-top: -1px;
-  font-family: "Aktiv Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @extend %aktiv-grotesk;
   @include border(bottom, 1px, solid, $secondary-color);
 
   .wrap {

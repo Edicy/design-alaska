@@ -57,6 +57,7 @@
     }
 
     a {
+      display: block;
       text-decoration: none;
       @include color($primary-color);
 
@@ -68,7 +69,8 @@
 }
 
 .menu-main {
-  float: right;
+  display: inline-block;
+  vertical-align: top;
   @include border(right, 1px, solid, $secondary-color);
 
   @include query($tablet-2) {
@@ -100,10 +102,11 @@
     top: 1px;
     float: left;
     @include border(left, 1px, solid, $secondary-color);
+    @include border(bottom, 1px, solid, $secondary-color);
 
     &.edit-btn {
       a {
-        margin: 24px 25px;
+        margin: 24px 30px 24px 25px;
         padding: 0;
 
         &:hover {
@@ -123,7 +126,6 @@
     }
 
     a {
-      display: block;
       padding: 24px 25px;
       font-weight: 700;
       font-size: 18px;
@@ -151,6 +153,416 @@
 
       &:hover,
       &.active {
+      }
+    }
+  }
+
+  .menu-lang {
+    display: none;
+
+    @include query($tablet-2) {
+      display: block;
+      padding-left: 0;
+
+      li {
+        text-align: left;
+
+        &:first-child {
+          border-top: none;
+        }
+
+        &.active a:hover {
+          // @include bg($blue-2);
+        }
+
+        a {
+          padding: 11px 30px 9px 53px;
+          font-size: 14px;
+
+          &:before,
+          &:after {
+            top: 13px;
+            left: 25px;
+          }
+
+          &.active,
+          &.active:hover {
+            font-weight: 600;
+          }
+
+          &.active,
+          &.active:hover {
+            // @include color($grey-1);
+            background: none;
+          }
+
+          &:hover {
+            // @include color($grey-1, 0.4);
+            // @include bg($grey-2, 0.5);
+          }
+        }
+
+        &.edit-btn {
+          display: block;
+          padding: 4px 25px 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.menu-lang-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 13px;
+  padding: 35px;
+  font-size: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before,
+  &:after {
+    top: 28px;
+    left: 25px;
+  }
+}
+
+.menu-lang-btn,
+.menu-lang li a.ico-lang {
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 13px;
+    content: '';
+  }
+}
+
+.menu-lang-btn,
+.menu-lang li a.ico-lang {
+  &:before {
+    @include bg($black);
+  }
+
+  &:after {
+    opacity: 0.95;
+    background-size: 200px;
+    background-repeat: no-repeat;
+
+    .no-svg & {
+      background-image: url('../images/ico-flags.png');
+    }
+
+    .svg & {
+      background-image: url('../assets/ico-flags.svg');
+    }
+  }
+}
+
+.menu-lang-popover {
+  display: none;
+
+  &.expanded {
+    position: absolute;
+    top: 76px;
+    right: 13px;
+    display: block;
+    margin-bottom: 40px;
+    padding: 6px 0;
+    min-width: 121px;
+    line-height: 1;
+    @include bg($white);
+    @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
+    z-index: 1;
+  }
+}
+
+.menu-lang {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -5px;
+  line-height: 0;
+  @include border(right, 1px, solid, $secondary-color);
+
+  @include query($tablet-2) {
+    display: none;
+  }
+
+  li {
+    display: list-item;
+    text-align: right;
+    font-size: 12px;
+
+    &.edit-btn {
+      a {
+        margin-top: 5px;
+        margin-right: 10px;
+      }
+    }
+
+    a {
+      position: relative;
+      display: block;
+      padding: 6px 40px 3px 13px;
+      @include color($secondary-color, 0.67);
+
+      &.active,
+      &.active:hover {
+        // @include bg($grey-2);
+      }
+
+      &:hover {
+        // @include bg($grey-2, 0.5);
+      }
+
+      &:before,
+      &:after {
+        top: 4px;
+        right: 12px;
+      }
+    }
+
+    &.edy-menu-langadd {
+      margin-left: 5px;
+    }
+  }
+}
+
+.sq:after {
+  background-position: 0 0;
+}
+
+.hy:after {
+  background-position: -20px 0;
+}
+
+.bn:after {
+  background-position: -40px 0;
+}
+
+.pt:after {
+  background-position: -60px 0;
+}
+
+.bg:after {
+  background-position: -80px 0;
+}
+
+.zh:after {
+  background-position: -100px 0;
+}
+
+.hr:after {
+  background-position: -120px 0;
+}
+
+.da:after {
+  background-position: -140px 0;
+}
+
+.cs:after {
+  background-position: -160px 0;
+}
+
+.et:after {
+  background-position: -180px 0;
+}
+
+.fi:after {
+  background-position: 0 -14px;
+}
+
+.fr:after {
+  background-position: -20px -14px;
+}
+
+.ka:after {
+  background-position: -40px -14px;
+}
+
+.de:after {
+  background-position: -60px -14px;
+}
+
+.el:after {
+  background-position: -80px -14px;
+}
+
+.hu:after {
+  background-position: -100px -14px;
+}
+
+.is:after {
+  background-position: -120px -14px;
+}
+
+.hi:after {
+  background-position: -140px -14px;
+}
+
+.id:after {
+  background-position: -160px -14px;
+}
+
+.fa:after {
+  background-position: -180px -14px;
+}
+
+.he:after {
+  background-position: 0 -28px;
+}
+
+.it:after {
+  background-position: -20px -28px;
+}
+
+.ja:after {
+  background-position: -40px -28px;
+}
+
+
+.ko:after {
+  background-position: -60px -28px;
+}
+
+.lv:after {
+  background-position: -80px -28px;
+}
+
+.lt:after {
+  background-position: -100px -28px;
+}
+
+.ms:after {
+  background-position: -120px -28px;
+}
+
+.nl:after {
+  background-position: -140px -28px;
+}
+
+.no:after {
+  background-position: -160px -28px;
+}
+
+.ur:after {
+  background-position: -180px -28px;
+}
+
+.fil:after {
+  background-position: 0 -42px;
+}
+
+.pl:after {
+  background-position: -20px -42px;
+}
+
+.ro:after {
+  background-position: -40px -42px;
+}
+
+.ru:after {
+  background-position: -60px -42px;
+}
+
+.ar:after {
+  background-position: -80px -42px;
+}
+
+.sr:after {
+  background-position: -100px -42px;
+}
+
+.sk:after {
+  background-position: -120px -42px;
+}
+
+.es:after {
+  background-position: -140px -42px;
+}
+
+.sv:after {
+  background-position: -160px -42px;
+}
+
+.tr:after {
+  background-position: -180px -42px;
+}
+
+
+.uk:after {
+  background-position: 0px -56px;
+}
+
+.en:after {
+  background-position: -20px -56px;
+}
+
+.menu-pagination {
+  @extend %aktiv-grotesk;
+  text-align: center;
+  font-weight: 700;
+  @include border(top, 1px, solid, $secondary-color);
+
+  .wrap {
+    padding: 0;
+  }
+
+  .menu {
+    @extend %clearfix;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -1px;
+    @include border(left, 1px, solid, $secondary-color);
+    @include border(right, 1px, solid, $secondary-color);
+
+    &.pagination-previous,
+    &.pagination-next {
+      a {
+        padding: 15px 30px;
+      }
+    }
+
+    &.pagination-previous {
+      float: left;
+    }
+
+    &.pagination-next {
+      float: right;
+    }
+
+    &:first-child {
+      margin-left: 0;
+      @include border(left, 1px, solid, $secondary-color);
+    }
+
+    a {
+      padding: 15px 20px;
+
+      &.active {
+        @include color($white);
+        @include bg($third-color);
+      }
+
+      &:hover {
+        @include bg($secondary-color, 0.8);
       }
     }
   }

@@ -15,20 +15,23 @@
     <section class="topbar-right">
       {% include "search" %}
 
-      {% if editmode or site.has_many_languages? %}
-        <nav class="menu-lang">
-          {% include "menu-lang" %}
-        </nav>
-      {% endif %}
-
       <nav class="menu-main js-menu-main">
         {% include "menu-level-1" %}
         {% if editmode or site.has_many_languages? %}
-          <div class="mobile-menu-lang menu-lang">
+          <div class="menu-lang-mobile menu-lang">
             {% include "menu-lang" %}
           </div>
         {% endif %}
       </nav>
+
+      {% if editmode or site.has_many_languages? %}
+        <nav class="menu-lang">
+          <button class="menu-lang-btn js-menu-lang-btn lang-flag {% for language in site.languages %}{% if language.selected? %}{{ language.code }}{% endif %}{% endfor %}">Choose language</button>
+          <div class="menu-lang-popover js-menu-lang-popover">
+            {% include "menu-lang" %}
+          </div>
+        </nav>
+      {% endif %}
     </section>
   </div>
 </aside>
