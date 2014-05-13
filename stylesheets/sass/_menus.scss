@@ -2,7 +2,7 @@
 .menu-btn {
   display: none;
 
-  @include query($tablet-3) {
+  @include query($tablet-2) {
     position: absolute;
     top: 24px;
     right: 20px;
@@ -13,9 +13,10 @@
     border: none;
     cursor: pointer;
 
-    &.open {
+    &.open,
+    &:hover {
       .menu-stripe {
-        @include bg($secondary-color, 0.47);
+        @include bg($secondary-color, 0.8);
       }
     }
 
@@ -35,6 +36,11 @@
       margin: 4px 0;
       @include bg($secondary-color, 0.67);
       border-radius: 5px;
+
+      &:hover {
+        @include bg($secondary-color, 0.8);
+      }
+
       &:first-child,
       &:last-child {
         margin: 0;
@@ -72,23 +78,31 @@
   @extend %inline-block;
   @include border(right, 1px, solid, $secondary-color);
 
-  @include query($tablet-3) {
+  @include query($tablet-2) {
     display: none;
 
     &.expanded {
-      top: 60px;
+      position: absolute;
+      top: 55px;
       right: 20px;
       z-index: 2;
       display: block;
       min-width: 350px;
       text-align: left;
       @include bg($white);
+      border-right: none;
+      @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
+    }
+  }
 
-      @include query($mobile-2) {
-        top: 0;
-        left: 0;
-        right: 0;
-      }
+  @include query($mobile-2) {
+
+    &.expanded {
+      top: 68px;
+      left: 0;
+      right: 0;
+      @include border(top, 1px, solid, $secondary-color);
+      @include no-box-shadow;
     }
   }
 
@@ -117,11 +131,16 @@
     &:first-child {
     }
 
-    @include query($tablet-3) {
+    @include query($tablet-2) {
+      top: 0;
       display: block;
       margin: 0;
       font-size: 20px;
-      @include border(bottom, 1px, solid, $primary-color, 0.2);
+      border-left: none;
+    }
+
+    @include query($tablet-2) {
+      float: none;
     }
 
     a {
@@ -143,15 +162,8 @@
         @include bg($primary-color, 0.8);
       }
 
-
-    }
-
-    @include query($tablet-3) {
-      display: block;
-      padding: 7px 25px 3px;
-
-      &:hover,
-      &.active {
+      @include query($tablet-2) {
+        padding: 9px 25px;
       }
     }
   }
@@ -159,9 +171,11 @@
   .menu-lang {
     display: none;
 
-    @include query($tablet-3) {
+    @include query($tablet-2) {
       display: block;
+      margin-left: 0;
       padding-left: 0;
+      border-right: none;
 
       li {
         text-align: left;
@@ -175,8 +189,9 @@
         }
 
         a {
-          padding: 11px 30px 9px 53px;
+          padding: 20px 30px 20px 53px;
           font-size: 14px;
+          @include color($secondary-color);
 
           &:before,
           &:after {
@@ -191,7 +206,7 @@
 
           &.active,
           &.active:hover {
-            // @include color($grey-1);
+            @include color($primary-color);
             background: none;
           }
 
@@ -295,7 +310,7 @@
   line-height: 0;
   @include border(right, 1px, solid, $secondary-color);
 
-  @include query($tablet-3) {
+  @include query($tablet-2) {
     display: none;
   }
 

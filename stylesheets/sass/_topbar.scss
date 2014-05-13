@@ -17,6 +17,13 @@
       @include flexbox;
       max-width: 960px;
     }
+
+    @include query($tablet-2) {
+      .no-flexbox &,
+      .flexbox & {
+        display: block;
+      }
+    }
   }
 
   .topbar-left,
@@ -24,6 +31,12 @@
     .no-flexbox & {
       display: table-cell;
       vertical-align: top;
+    }
+
+    @include query($tablet-2) {
+      .no-flexbox & {
+        display: block;
+      }
     }
   }
 
@@ -34,6 +47,10 @@
   .topbar-right {
     width: 830px;
     text-align: right;
+
+    @include query($tablet-2) {
+      width: auto;
+    }
   }
 
   .topbar-title {
