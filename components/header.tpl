@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header js-header">
   {% if site.root_item.selected? %}
     {% if editmode %}<button class="bgpicker-btn js-bgpicker-cover-settings" data-bg-image="{{ page.data.cover_image }}" data-bg-color="{{ page.data.cover_color }}"></button>{% endif %}
     <div class="header-banner js-bgpicker-cover-image"{% if page.data.cover_image %} style="background-image: url('{{ page.data.cover_image }}');"{% endif %}>

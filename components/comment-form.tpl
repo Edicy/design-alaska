@@ -1,4 +1,4 @@
-<div class="comment-form{% unless comment.valid? %} form_with_errors{% endunless %}">
+<div class="comment-form js-comment-form{% unless comment.valid? %} form_with_errors{% endunless %}">
   <h2 class="comment-title">{{"add_a_comment"|lc}}</h2>
   {% commentform %}
     {% assign comment_name_error = false %}
@@ -26,7 +26,7 @@
 
         <div class="form_field form_field_large{% if comment_body_error %} form_field_with_errors{% endif %}">
           <label for="comment-form-body">{{ "comment" | lc }}{% if comment_body_error %}<span class="form_field_error"> — {{ "comment_body_blank" | lc }}</span>{% endif %}</label>
-          <textarea id="comment-form-body" class="form_field_textarea" name="comment[body]" rows="5">{{ comment.body }}</textarea>
+          <textarea id="comment-form-body" class="form_field_textarea" name="comment[body]" rows="5">{{ comment.body_html }}</textarea>
         </div>
       </div>
 

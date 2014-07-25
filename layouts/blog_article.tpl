@@ -6,7 +6,7 @@
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ site.name }}">
   <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fbimage }}"><!-- TODO: Add image location data tag -->
+  <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}"><!-- TODO: Add image location data tag -->
 </head>
 
 <body class="post-page">
@@ -34,7 +34,7 @@
 
             <section class="comment-messages content-formatted">
               {% for comment in article.comments reversed %}
-                <div class="comment">{{ comment.body }} ({{ comment.author }}, {{ comment.created_at | date : "%b %d, %Y" }})</div>
+                <div class="comment">{{ comment.body_html }} ({{ comment.author }}, {{ comment.created_at | date : "%b %d, %Y" }})<div>{% removebutton %}</div></div>
               {% endfor %}
             </section>
 
