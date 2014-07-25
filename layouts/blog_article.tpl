@@ -30,7 +30,7 @@
 
         <section class="comments content-formatted">
           <div class="wrap">
-            {% case article.comments_count %}{% when 0 %}{% else %}<h2 class="comments-title">{{ "comments_for_count" | lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></h2>{% endcase %}
+            <h2 class="comments-title">{{ 'replies' | lcc : article.comments_count }}</h2>
 
             <section class="comment-messages content-formatted">
               {% for comment in article.comments reversed %}
