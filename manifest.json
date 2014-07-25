@@ -1,22 +1,22 @@
 {
-  "description": "New design",
-  "name": "New design",
+  "description": "Companion of a storyteller",
+  "name": "Alaska",
   "preview_medium": "",
   "preview_small": "",
-  "author": "",
+  "author": "Kuldar Kalvik",
   "layouts": [
     {
-      "content_type": "page",
+      "content_type": "blog",
       "component": false,
       "file": "layouts/blog___news.tpl",
-      "layout_name": "page_default",
+      "layout_name": "blog",
       "title": "Blog & News"
     },
     {
-      "content_type": "page",
+      "content_type": "blog_article",
       "component": false,
       "file": "layouts/blog_article.tpl",
-      "layout_name": "page_default",
+      "layout_name": "blog_article",
       "title": "Blog article"
     },
     {
@@ -30,7 +30,7 @@
       "content_type": "page",
       "component": false,
       "file": "layouts/front_page.tpl",
-      "layout_name": "page_default",
+      "layout_name": "page_front",
       "title": "Front page"
     },
     {
@@ -144,8 +144,7 @@
       "file": "components/topbar.tpl",
       "layout_name": "",
       "title": "topbar"
-    },
-    null
+    }
   ],
   "assets": [
     {
@@ -269,22 +268,16 @@
       "filename": "ico-flags.png"
     },
     {
-      "content_type": "text/javascript",
-      "file": "javascripts/articlePages.js",
+      "content_type": "application/javascript",
+      "file": "javascripts/application.js",
       "kind": "javascripts",
-      "filename": "articlePages.js"
+      "filename": "application.js"
     },
     {
-      "content_type": "text/javascript",
-      "file": "javascripts/jquery.js",
+      "content_type": "application/javascript",
+      "file": "javascripts/application.min.js",
       "kind": "javascripts",
-      "filename": "jquery.js"
-    },
-    {
-      "content_type": "text/javascript",
-      "file": "javascripts/main.js",
-      "kind": "javascripts",
-      "filename": "main.js"
+      "filename": "application.min.js"
     },
     {
       "content_type": "text/javascript",
@@ -293,28 +286,22 @@
       "filename": "modernizr.js"
     },
     {
-      "content_type": "text/javascript",
-      "file": "javascripts/overthrow.js",
+      "content_type": "application/javascript",
+      "file": "javascripts/modernizr.min.js",
       "kind": "javascripts",
-      "filename": "overthrow.js"
-    },
-    {
-      "content_type": "text/javascript",
-      "file": "javascripts/retina.js",
-      "kind": "javascripts",
-      "filename": "retina.js"
-    },
-    {
-      "content_type": "text/css",
-      "file": "stylesheets/ie8.css",
-      "kind": "stylesheets",
-      "filename": "ie8.css"
+      "filename": "modernizr.min.js"
     },
     {
       "content_type": "text/css",
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/main.min.css",
+      "kind": "stylesheets",
+      "filename": "main.min.css"
     }
   ]
 }
