@@ -1,5 +1,5 @@
 {% editorjsblock %}
-  <script src='/assets/admin/tools/0.1.1/edicy-tools.js'></script>
+  <script src='/assets/admin/tools/0.1.3/edicy-tools.js'></script>
   <script>
     var pageData = new Edicy.CustomData({
       type: 'page',
