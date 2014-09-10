@@ -2,11 +2,7 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% include "html-head" %}
-<<<<<<< HEAD
   {% if editmode %}<link rel="stylesheet" href="/assets/admin/tools/latest/edicy-tools.css">{% endif %}
-=======
-  {% if editmode %}<link rel="stylesheet" href="/assets/admin/tools/0.1.3/edicy-tools.css">{% endif %}
->>>>>>> FETCH_HEAD
 </head>
 
 <body class="front-page">
