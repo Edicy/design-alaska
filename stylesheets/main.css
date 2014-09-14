@@ -101,15 +101,12 @@ body {
   25% {
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
   }
-
   50% {
     -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
   }
-
   75% {
     -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
   }
-
   100% {
     -webkit-transform: rotate(-360deg);
   }
@@ -118,15 +115,12 @@ body {
   25% {
     -moz-transform: translateX(42px) rotate(-90deg) scale(0.5);
   }
-
   50% {
     -moz-transform: translateX(42px) translateY(42px) rotate(-180deg);
   }
-
   75% {
     -moz-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
   }
-
   100% {
     -moz-transform: rotate(-360deg);
   }
@@ -139,7 +133,6 @@ body {
     -o-transform: translateX(42px) rotate(-90deg) scale(0.5);
     transform: translateX(42px) rotate(-90deg) scale(0.5);
   }
-
   50% {
     -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
     -moz-transform: translateX(42px) translateY(42px) rotate(-180deg);
@@ -147,7 +140,6 @@ body {
     -o-transform: translateX(42px) translateY(42px) rotate(-180deg);
     transform: translateX(42px) translateY(42px) rotate(-180deg);
   }
-
   75% {
     -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
     -moz-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
@@ -155,7 +147,6 @@ body {
     -o-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
     transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
   }
-
   100% {
     -webkit-transform: rotate(-360deg);
     -moz-transform: rotate(-360deg);
@@ -1263,12 +1254,14 @@ body {
   color: #1b2124;
   color: rgba(27, 33, 36, 0.75);
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #000;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .footer .voog-reference a:hover {
   color: #1b2124;
   color: rgba(27, 33, 36, 0.75);
-  border: 1px solid black;
+  border: 1px solid #000;
   border: 1px solid rgba(0, 0, 0, 0.75);
 }
+
+/*# sourceMappingURL=main.css.map */
