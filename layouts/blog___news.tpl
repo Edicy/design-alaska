@@ -39,7 +39,7 @@
   </div>
 
   {% include "javascripts" %}
-  {% include "bg-picker" %}
+  {% include "edicy-tools" %}
 
   <script>var langCode = "{{ page.language_code }}";</script>
   <script src="{{ javascripts_path }}/articlePages.js?1"></script>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
+  {% assign front_page = true %}
   {% include "html-head" %}
-  {% if editmode %}<link rel="stylesheet" href="/assets/admin/tools/latest/edicy-tools.css">{% endif %}
+  {% if editmode %}<link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">{% endif %}
 </head>
 
 <body class="front-page">
@@ -31,7 +32,7 @@
       </section> -->
 
       <header class="content-header content-formatted">
-        <div class="wrap">{% content name="header_2" %}</div>
+        <div class="wrap">{% content %}</div>
       </header>
 
       <section class="blog">
@@ -58,6 +59,6 @@
   </div>
 
   {% include "javascripts" %}
-  {% include "bg-picker" %}
+  {% include "edicy-tools" %}
 </body>
 </html>

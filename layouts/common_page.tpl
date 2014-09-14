@@ -26,6 +26,6 @@
   </div>
 
   {% include "javascripts" %}
-  {% include "bg-picker" %}
+  {% include "edicy-tools" %}
 </body>
 </html>
