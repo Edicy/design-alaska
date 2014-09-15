@@ -53,18 +53,13 @@
 
   {% comment %}Content page OG & meta tags.{% endcomment %}
   {% if front_page == true %}
-    {% comment %}Front pages OG image tags. {% endcomment %}
-    {% unless page.data.cover_image == nil or page.data.cover_image == '' %}
-      <meta property="og:image" content="{{ page.data.cover_image }}">
+    {% unless page.data.header_image == '' %}
+      {% if page.data.header_image == nil %}
+        <meta property="og:image" content="{{ site.url }}{{ header_image | remove_first: '/' }}">
+      {% else %}
+        <meta property="og:image" content="{{ header_image }}">
+      {% endif %}
     {% endunless %}
-  {% else %}
-    {% comment %}TODO: Add functionality to set custom Facebook OG image if the CMS is going to support it.{% endcomment %}
-    {% comment %}Common pages OG image tags.{% endcomment %}
-    {% if page.data.fb_image %}
-      <meta property="og:image" content="{{ page.data.fb_image }}">
-    {% elsif site.data.fb_image %}
-      <meta property="og:image" content="{{ site.data.fb_image }}">
-    {% endif %}
   {% endif %}
 
   {% comment %}Description tags.{% endcomment %}
