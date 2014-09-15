@@ -8,7 +8,6 @@
 </head>
 
 <body class="front-page">
-  {{ content_text }}
   <div class="container">
     {% include "header" %}
 
