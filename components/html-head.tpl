@@ -60,6 +60,14 @@
         <meta property="og:image" content="{{ header_image }}">
       {% endif %}
     {% endunless %}
+  {% else %}
+    {% comment %}TODO: Add functionality to set custom Facebook OG image if the CMS is going to support it.{% endcomment %}
+    {% comment %}Common pages OG image tags.{% endcomment %}
+    {% if page.data.fb_image %}
+      <meta property="og:image" content="{{ page.data.fb_image }}">
+    {% elsif site.data.fb_image %}
+      <meta property="og:image" content="{{ site.data.fb_image }}">
+    {% endif %}
   {% endif %}
 
   {% comment %}Description tags.{% endcomment %}
