@@ -43,6 +43,20 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/edicy-tools-variables.tpl",
+      "layout_name": "edicy-tools-variables",
+      "title": "edicy-tools-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools.tpl",
+      "layout_name": "edicy-tools",
+      "title": "edicy-tools"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/footer.tpl",
       "layout_name": "",
       "title": "footer"
@@ -137,13 +151,6 @@
       "file": "components/topbar.tpl",
       "layout_name": "",
       "title": "topbar"
-    },
-    {
-      "title": "edicy-tools",
-      "layout_name": "edicy-tools",
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools.tpl"
     }
   ],
   "assets": [
@@ -254,6 +261,12 @@
       "file": "assets/metaserifpro-book-regular.woff",
       "kind": "assets",
       "filename": "metaserifpro-book-regular.woff"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/header-bg.jpg",
+      "kind": "images",
+      "filename": "header-bg.jpg"
     },
     {
       "content_type": "image/png",

@@ -1,10 +1,9 @@
 /* HEADER */
 .header {
-  .header-banner {
+  .background-image {
     position: relative;
     text-align: center;
     @include color($white);
-    background-image: url('../photos/header-bg.jpg');
     background-size: cover;
 
     .wrap {
