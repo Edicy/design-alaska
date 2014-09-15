@@ -8,6 +8,7 @@
 </head>
 
 <body class="front-page">
+  {{ content_text }}
   <div class="container">
     {% include "header" %}
 
@@ -17,6 +18,7 @@
       </header>
 
       <!-- TODO: Add custom image gallery-->
+  }
 <!--       <section class="custom-gallery">
         <div class="wrap">
           <div class="gallery-inner gallery-left">

@@ -84,14 +84,16 @@
       {% comment %}Content page description tags.{% endcomment %}
       {% unless editmode %}
         {% capture content %}{% content %}{% endcapture %}
-        <meta property="og:description" content="{{ content | strip_html | truncatewords: 200, '...' }}">
-        <meta name="description" content="{{ content | strip_html | truncatewords: 200, '...'  }}">
+        {% assign content_length = content | strip_html | size %}
+        {% if content_length > 0 %}
+          <meta property="og:description" content="{{ content | strip_html | escape | strip_newlines | truncatewords: 200, '...' }}">
+          <meta name="description" content="{{ content | strip_html | escape | strip_newlines | truncatewords: 200, '...' }}">
+        {% else %}
+        {% endif %}
       {% endunless %}
     {% endif %}
   {% endunless %}
 {% endif %}
-
-
 
 {% if blog %}{{ blog.rss_link }}{% endif %}
 {{ site.stats_header }}
