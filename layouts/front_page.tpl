@@ -16,22 +16,7 @@
         <div class="wrap">{% content name="header_1" %}</div>
       </header>
 
-      <!-- TODO: Add custom image gallery-->
-  }
-<!--       <section class="custom-gallery">
-        <div class="wrap">
-          <div class="gallery-inner gallery-left">
-            <div class="custom-image custom-image-1" style="background-image: url('{{ photos_path }}/gallery-1.jpg');"></div>
-            <div class="custom-image custom-image-2" style="background-image: url('{{ photos_path }}/gallery-1.jpg');"></div>
-            <div class="custom-image custom-image-3" style="background-image: url('{{ photos_path }}/gallery-1.jpg');"></div>
-            <div class="custom-image custom-image-4" style="background-image: url('{{ photos_path }}/gallery-1.jpg');"></div>
-          </div>
-
-          <div class="gallery-inner gallery-right">
-
-          </div>
-        </div>
-      </section> -->
+      {% comment %}TODO: Add custom image gallery{% endcomment %}
 
       <header class="content-header content-formatted">
         <div class="wrap">{% content %}</div>
