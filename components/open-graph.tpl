@@ -26,18 +26,11 @@
 {% endif %}
 
 {% comment %}Open Graph description{% endcomment %}
-{% if article %}
-  {% assign excerpt_text = article.excerpt | strip_html | escape | strip_newlines | remove: " " | size %}
-  {% assign excerpt_description = article.excerpt | strip_html | escape | strip_newlines | truncatewords: 200, '...'%}
-{% elsif blog %}
-  {% assign excerpt_text = articles.first.excerpt | strip_html | escape | strip_newlines | remove: " " | size %}
-  {% assign excerpt_description = articles.first.excerpt | strip_html | escape | strip_newlines | truncatewords: 200, '...'%}
-{% endif %}
-
-{% if blog and excerpt_text > 0 %}
+{% if blog and article == nil and (page.description == nil or page.description == "") %}
+  {% assign excerpt_description = articles.first.excerpt | strip_html | escape | strip_newlines | truncatewords: 200, '...' %}
   <meta property="og:description" content="{{ excerpt_description }}">
   <meta name="description" content="{{ excerpt_description }}">
-{% elsif page.description != nil and page.description != "" %}
-  <meta property="og:description" content="{{ page.description }}">
-  <meta name="description" content="{{ page.description }}">
+{% else %}
+    <meta property="og:description" content="{% if article %}{{ article.description }}{% else %}{{ page.description }}{% endif %}">
+    <meta name="description" content="{% if article %}{{ article.description }}{% else %}{{ page.description }}{% endif %}">
 {% endif %}
