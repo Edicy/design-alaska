@@ -1,6 +1,10 @@
 {
   "name": "voog-design-alaska",
   "description": "The Alaska design template for Voog",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Edicy/design-alaska.git"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-bowercopy": "^1.1.0",
