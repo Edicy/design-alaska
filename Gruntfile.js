@@ -115,7 +115,7 @@ module.exports = function(grunt) {
       },
       kit: {
         cmd: function(file) {
-          return 'kit push ' + file;
+          return 'kit push -s ' + grunt.option('site') + ' ' + file;
         }
       }
     },
