@@ -222,28 +222,29 @@ body {
 .content-formatted img {
   height: auto;
 }
-.content-formatted pre, .content-formatted code {
-  padding: 10px;
+.content-formatted pre,
+.content-formatted code {
   font-size: 14px;
   background-color: #fafafa;
 }
 .content-formatted pre {
-  margin-bottom: 0;
   overflow: auto;
-}
-.content-formatted pre, .content-formatted pre code {
   padding: 10px;
-  font-size: 14px;
-  background-color: #1b2124;
 }
 .content-formatted pre code {
-  display: block;
-  white-space: nowrap;
-  margin-top: 0;
+  display: inline;
   padding: 0;
+  white-space: pre;
+  line-height: inherit;
+  background-color: transparent;
+  word-wrap: normal;
 }
 .content-formatted code {
   display: inline-block;
+  padding: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 .content-formatted .edy-texteditor-view {
   min-height: 21px;

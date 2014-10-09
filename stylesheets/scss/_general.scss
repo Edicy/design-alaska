@@ -184,33 +184,32 @@ body {
     height: auto;
   }
 
-  pre, code {
-    padding: 10px;
+  pre,
+  code {
     font-size: 14px;
     @include bg($grey-3);
   }
 
   pre {
-    margin-bottom: 0;
     overflow: auto;
-
-    &, code {
-      padding: 10px;
-      font-size: 14px;
-      @include bg($grey-2);
-    }
+    padding: 10px;
 
     code {
-      display: block;
-      white-space: nowrap;
-      margin-top: 0;
+      display: inline;
       padding: 0;
+      white-space: pre;
+      line-height: inherit;
+      background-color: transparent;
+      @include word-wrap(normal);
     }
   }
 
   code {
     display: inline-block;
+    padding: 5px;
+    @include word-wrap(break-word);
   }
+
   .edy-texteditor-view {
     min-height: 21px;
   }
