@@ -18,7 +18,7 @@ To sync the template with your **Voog** sites, set up the [Voog Developer Toolki
 		* Default site is the first site defined in the **.voog** configuration file.
 		* If the **.voog** file is missing, the watcher will only update the output files on the local computer.
 * To watch specific site start the Grunt watcher with **--site** parameter value.
-	* **Example:** ```grunt watch --site=test```	
+	* **Example:** ```grunt watch --site=mysite.voog.com```
 	* **Notes:**
 		* Possible **--site** values are the site names defined in the **.voog** configuration file.
 		* If the **.voog** file is missing, the watcher will ignore the **--site** parameter and updates the output files only on the local computer.
