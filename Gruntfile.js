@@ -16,17 +16,7 @@ module.exports = function(grunt) {
         },
         files: {
           'concat/jquery.js': 'jquery/dist/jquery.js',
-          'concat/overthrow.js': 'overthrow/src/overthrow-polyfill.js',
-          'modernizr.js': 'modernizr/modernizr.js'
-        }
-      },
-
-      stylesheets: {
-        options: {
-          destPrefix: 'stylesheets/scss/'
-        },
-        files: {
-          'bourbon': 'bourbon/dist'
+          'concat/overthrow.js': 'overthrow/src/overthrow-polyfill.js'
         }
       }
     },
@@ -34,14 +24,12 @@ module.exports = function(grunt) {
     // Builds custom modernizr script.
     modernizr: {
       build: {
-        'devFile' : 'javascripts/src/modernizr.js',
+        'devFile' : 'bower_components/modernizr/modernizr.js',
         'outputFile' : 'javascripts/modernizr.js',
-
         'tests': [
           'flexbox',
           'svg'
         ],
-
         'uglify' : false
       }
     },
@@ -113,6 +101,7 @@ module.exports = function(grunt) {
           return 'kit manifest';
         }
       },
+
       kit: {
         cmd: function(file) {
           if (grunt.option('site')) {
@@ -204,8 +193,10 @@ module.exports = function(grunt) {
       if (action == "added" || action == "deleted") {
         grunt.task.run(['exec:kitmanifest']);
       }
-      if (action != "deleted") {
-        grunt.task.run(['exec:kit:' + filepath]);
+      if (grunt.file.exists('.voog')) {
+        if (action != "deleted") {
+          grunt.task.run(['exec:kit:' + filepath]);
+        }
       }
     }
   });
