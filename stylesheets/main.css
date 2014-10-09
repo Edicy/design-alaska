@@ -242,6 +242,9 @@ body {
   margin-top: 0;
   padding: 0;
 }
+.content-formatted code {
+  display: inline-block;
+}
 .content-formatted .edy-texteditor-view {
   min-height: 21px;
 }
