@@ -12,12 +12,12 @@ To set up the local developing environment, clone this repository and run the fo
 To sync the template with your **Voog** sites, set up the [Voog Developer Toolkit](http://www.voog.com/developers/kit)
 
 ##Watch and update modifications
-* To watch (and synchronize) modified files in real time (on the default site) start the Grunt watcher task:
+* To watch (and synchronize) modified files in real time (**on the default site**) start the Grunt watcher task:
 	* **Example:** ```grunt watch```
 	* **Notes:**
 		* Default site is the first site defined in the **.voog** configuration file.
 		* If the **.voog** file is missing, the watcher will only update the output files on the local computer.
-* To watch specific site start the Grunt watcher with **--site** parameter value.
+* To watch **specific site** start the Grunt watcher with **--site** parameter value.
 	* **Example:** ```grunt watch --site=mysite.voog.com```
 	* **Notes:**
 		* Possible **--site** values are the site names defined in the **.voog** configuration file.
