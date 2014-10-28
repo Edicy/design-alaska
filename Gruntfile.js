@@ -24,7 +24,7 @@ module.exports = function(grunt) {
       If there are some javascript files that shouldn't be concatenated:
         - Add the files to 'javascripts/src' folder.
         - Uncomment the following task.
-        - Uncomment the task runner on line '166'.
+        - Uncomment the task runner on line '167'.
         - Run 'npm install grunt-contrib-copy' on command-line.
         - Add 'copy' task next to 'modernizr' task on line '179'.
     */
@@ -163,9 +163,9 @@ module.exports = function(grunt) {
     },
   });
 
+  grunt.loadNpmTasks('grunt-contrib-concat');
   // Uncomment the following task if there are some javascript files that shouldn't be concatenated (see line '22' for further instructions).
   // grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
