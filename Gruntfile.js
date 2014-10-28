@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         - Add the files to 'javascripts/src' folder.
         - Uncomment the following task.
         - Uncomment the task runner on line '168'.
-        - Run 'npm install grunt-contrib-copy' on command-line.
+        - Run 'npm install grunt-contrib-copy --save-dev' on command-line.
         - Add 'copy' task next to 'modernizr' task on line '179'.
     */
     // copy: {
@@ -119,27 +119,23 @@ module.exports = function(grunt) {
 
     // Minifies the image files.
     imagemin: {
-      build: {
+      minify_images: {
         files: [{
           expand: true,
           cwd: 'images/src/',
           src: '*.{png,jpg,gif}',
           dest: 'images/'
         }]
-      }
-    },
+      },
 
-    // Minifies the scalable vector graphics files
-    svgmin: {
-      build: {
+      minify_assets: {
         files: [{
           expand: true,
           cwd: 'assets/src/',
           src: '*.svg',
-          dest: 'assets/',
-          ext: '.svg'
+          dest: 'assets/'
         }]
-      },
+      }
     },
 
     // Watches the project for changes and recompiles the output files.
@@ -174,9 +170,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-modernizr');
   grunt.loadNpmTasks('grunt-newer');
-  grunt.loadNpmTasks('grunt-svgmin');
 
-  grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'cssmin', 'imagemin', 'svgmin']);
+  grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'cssmin', 'imagemin']);
 
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
