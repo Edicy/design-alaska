@@ -24,7 +24,7 @@ module.exports = function(grunt) {
       If there are some javascript files that shouldn't be concatenated:
         - Add the files to 'javascripts/src' folder.
         - Uncomment the following task.
-        - Uncomment the task runner on line '167'.
+        - Uncomment the task runner on line '168'.
         - Run 'npm install grunt-contrib-copy' on command-line.
         - Add 'copy' task next to 'modernizr' task on line '179'.
     */
