@@ -67,17 +67,17 @@ body {
   vertical-align: top;
 }
 
-.bgpicker-btn {
+.bgpicker-btn, .menu-btn, .menu-lang-btn {
   margin: 0;
   padding: 0;
   background: none;
   border: none;
   cursor: pointer;
 }
-.bgpicker-btn:focus {
+.bgpicker-btn:focus, .menu-btn:focus, .menu-lang-btn:focus {
   outline: none;
 }
-.bgpicker-btn::-moz-focus-inner {
+.bgpicker-btn::-moz-focus-inner, .menu-btn::-moz-focus-inner, .menu-lang-btn::-moz-focus-inner {
   padding: 0;
   border: none;
 }
@@ -270,13 +270,6 @@ body {
     background-color: #dddddd;
     background-color: rgba(221, 221, 221, 0.8);
   }
-  .menu-btn:focus {
-    outline: none;
-  }
-  .menu-btn::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-  }
   .menu-btn .menu-stripe {
     display: block;
     width: 25px;
@@ -431,10 +424,10 @@ body {
 
 .menu-lang-btn {
   position: relative;
-  width: 20px;
-  height: 13px;
+  height: 25px;
   padding: 35px;
-  font-size: 0;
+  font-family: inherit;
+  font-size: 12px;
   background: none;
   border: none;
   cursor: pointer;
@@ -442,40 +435,64 @@ body {
 .menu-lang-btn:hover {
   opacity: 0.8;
 }
-.menu-lang-btn:focus {
-  outline: none;
-}
 .menu-lang-btn:before, .menu-lang-btn:after {
   top: 28px;
   left: 25px;
 }
-
-.menu-lang-btn:before, .menu-lang-btn:after,
-.menu-lang li a.ico-lang:before,
-.menu-lang li a.ico-lang:after {
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 13px;
-  content: '';
+.flags-disabled .menu-lang-btn {
+  padding: 31px 32px 39px 37px;
+}
+.flags-disabled .menu-lang-btn .ico-popover-toggle {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  font-size: 7.2px;
+}
+.menu-lang-btn.open .ico-popover-toggle {
+  left: 1px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.flags-enabled .menu-lang-btn {
+  width: 31px;
+}
+.flags-enabled .menu-lang-btn .lang-title,
+.flags-enabled .menu-lang-btn .ico-popover-toggle {
+  display: none;
 }
 
+.menu-lang-btn:before, .menu-lang-btn:after,
+.menu-lang .menu-item .lang-flag:before,
+.menu-lang .menu-item .lang-flag:after {
+  position: absolute;
+  display: block;
+  width: 21px;
+  height: 15px;
+  content: '';
+}
+.flags-disabled .menu-lang-btn:before, .flags-disabled .menu-lang-btn:after, .flags-disabled
+.menu-lang .menu-item .lang-flag:before, .flags-disabled
+.menu-lang .menu-item .lang-flag:after {
+  display: none;
+}
 .menu-lang-btn:before,
-.menu-lang li a.ico-lang:before {
+.menu-lang .menu-item .lang-flag:before {
   background-color: black;
 }
 .menu-lang-btn:after,
-.menu-lang li a.ico-lang:after {
+.menu-lang .menu-item .lang-flag:after {
   opacity: 0.95;
-  background-size: 200px;
   background-repeat: no-repeat;
 }
 .no-svg .menu-lang-btn:after, .no-svg
-.menu-lang li a.ico-lang:after {
+.menu-lang .menu-item .lang-flag:after {
   background-image: url("../images/ico-flags.png");
 }
 .svg .menu-lang-btn:after, .svg
-.menu-lang li a.ico-lang:after {
+.menu-lang .menu-item .lang-flag:after {
   background-image: url("../assets/ico-flags.svg");
 }
 
@@ -500,6 +517,7 @@ body {
 
 .menu-lang {
   position: relative;
+  top: 1px;
   margin-left: -5px;
   line-height: 0;
   border-right: 1px solid #dddddd;
@@ -508,6 +526,12 @@ body {
   .menu-lang {
     display: none;
   }
+}
+.menu-lang.flags-disabled .lang-flag {
+  padding-left: 4px;
+}
+.menu-lang.flags-disabled .lang-flag:before, .menu-lang.flags-disabled .lang-flag:after {
+  display: none;
 }
 .menu-lang li {
   display: list-item;
@@ -540,172 +564,238 @@ body {
   margin-left: 5px;
 }
 
-.sq:after {
+.lang-flag-sq:after {
   background-position: 0 0;
 }
 
-.hy:after {
-  background-position: -20px 0;
+.lang-flag-hy:after {
+  background-position: -21px 0;
 }
 
-.bn:after {
-  background-position: -40px 0;
+.lang-flag-bn:after {
+  background-position: -42px 0;
 }
 
-.pt:after {
-  background-position: -60px 0;
+.lang-flag-xx:after {
+  background-position: -63px 0;
 }
 
-.bg:after {
-  background-position: -80px 0;
+.lang-flag-bg:after {
+  background-position: -84px 0;
 }
 
-.zh:after {
-  background-position: -100px 0;
+.lang-flag-zh:after {
+  background-position: -105px 0;
 }
 
-.hr:after {
-  background-position: -120px 0;
+.lang-flag-hr:after {
+  background-position: -126px 0;
 }
 
-.da:after {
-  background-position: -140px 0;
+.lang-flag-da:after {
+  background-position: -147px 0;
 }
 
-.cs:after {
-  background-position: -160px 0;
+.lang-flag-cs:after {
+  background-position: -168px 0;
 }
 
-.et:after {
-  background-position: -180px 0;
+.lang-flag-et:after {
+  background-position: -189px 0;
 }
 
-.fi:after {
-  background-position: 0 -14px;
+.lang-flag-fi:after {
+  background-position: 0 -15px;
 }
 
-.fr:after {
-  background-position: -20px -14px;
+.lang-flag-fr:after {
+  background-position: -21px -15px;
 }
 
-.ka:after {
-  background-position: -40px -14px;
+.lang-flag-ka:after {
+  background-position: -42px -15px;
 }
 
-.de:after {
-  background-position: -60px -14px;
+.lang-flag-de:after {
+  background-position: -63px -15px;
 }
 
-.el:after {
-  background-position: -80px -14px;
+.lang-flag-el:after {
+  background-position: -84px -15px;
 }
 
-.hu:after {
-  background-position: -100px -14px;
+.lang-flag-hu:after {
+  background-position: -105px -15px;
 }
 
-.is:after {
-  background-position: -120px -14px;
+.lang-flag-is:after {
+  background-position: -126px -15px;
 }
 
-.hi:after {
-  background-position: -140px -14px;
+.lang-flag-hi:after {
+  background-position: -147px -15px;
 }
 
-.id:after {
-  background-position: -160px -14px;
+.lang-flag-id:after {
+  background-position: -168px -15px;
 }
 
-.fa:after {
-  background-position: -180px -14px;
+.lang-flag-fa:after {
+  background-position: -189px -15px;
 }
 
-.he:after {
-  background-position: 0 -28px;
+.lang-flag-he:after {
+  background-position: 0 -30px;
 }
 
-.it:after {
-  background-position: -20px -28px;
+.lang-flag-it:after {
+  background-position: -21px -30px;
 }
 
-.ja:after {
-  background-position: -40px -28px;
+.lang-flag-ja:after {
+  background-position: -42px -30px;
 }
 
-.ko:after {
-  background-position: -60px -28px;
+.lang-flag-ko:after {
+  background-position: -63px -30px;
 }
 
-.lv:after {
-  background-position: -80px -28px;
+.lang-flag-lv:after {
+  background-position: -84px -30px;
 }
 
-.lt:after {
-  background-position: -100px -28px;
+.lang-flag-lt:after {
+  background-position: -105px -30px;
 }
 
-.ms:after {
-  background-position: -120px -28px;
+.lang-flag-ms:after {
+  background-position: -126px -30px;
 }
 
-.nl:after {
-  background-position: -140px -28px;
+.lang-flag-nl:after {
+  background-position: -147px -30px;
 }
 
-.no:after {
-  background-position: -160px -28px;
+.lang-flag-no:after {
+  background-position: -168px -30px;
 }
 
-.ur:after {
-  background-position: -180px -28px;
+.lang-flag-ur:after {
+  background-position: -189px -30px;
 }
 
-.fil:after {
-  background-position: 0 -42px;
+.lang-flag-fil:after {
+  background-position: 0 -45px;
 }
 
-.pl:after {
-  background-position: -20px -42px;
+.lang-flag-pl:after {
+  background-position: -21px -45px;
 }
 
-.ro:after {
-  background-position: -40px -42px;
+.lang-flag-ro:after {
+  background-position: -42px -45px;
 }
 
-.ru:after {
-  background-position: -60px -42px;
+.lang-flag-ru:after {
+  background-position: -63px -45px;
 }
 
-.ar:after {
-  background-position: -80px -42px;
+.lang-flag-ar:after {
+  background-position: -84px -45px;
 }
 
-.sk:after {
-  background-position: -100px -42px;
+.lang-flag-sk:after {
+  background-position: -105px -45px;
 }
 
-.sl:after {
-  background-position: -120px -42px;
+.lang-flag-sl:after {
+  background-position: -126px -45px;
 }
 
-.es:after {
-  background-position: -140px -42px;
+.lang-flag-es:after {
+  background-position: -147px -45px;
 }
 
-.sv:after {
-  background-position: -160px -42px;
+.lang-flag-sv:after {
+  background-position: -168px -45px;
 }
 
-.tr:after {
-  background-position: -180px -42px;
+.lang-flag-tr:after {
+  background-position: -189px -45px;
 }
 
-.uk:after {
-  background-position: 0px -56px;
+.lang-flag-uk:after {
+  background-position: 0 -60px;
 }
 
-.en:after {
-  background-position: -20px -56px;
+.lang-flag-en:after {
+  background-position: -21px -60px;
+}
+
+.lang-flag-xx:after {
+  background-position: -42px -60px;
+}
+
+.lang-flag-xx:after {
+  background-position: -63px -60px;
+}
+
+.lang-flag-pt:after {
+  background-position: -84px -60px;
+}
+
+.lang-flag-xx:after {
+  background-position: -105px;
+}
+
+.lang-flag-sr:after {
+  background-position: -126px;
+}
+
+.lang-flag-xx:after {
+  background-position: -147px;
+}
+
+.lang-flag-xx:after {
+  background-position: -168px;
+}
+
+.lang-options {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.09);
+}
+.lang-options .menu .menu-item {
+  margin-top: 8px;
+  padding: 7px 12px;
+  font-size: 13px;
+}
+
+.option-btn {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: #0066bb;
+}
+.option-btn:hover {
+  color: #0066bb;
+  color: rgba(0, 102, 187, 0.8);
+}
+.option-btn::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+.option-btn:focus {
+  outline: none;
+}
+.flags-disabled .option-btn .disable-text {
+  display: none;
+}
+.flags-enabled .option-btn .enable-text {
+  display: none;
 }
 
 .menu-pagination {

@@ -68,7 +68,6 @@
 
     var getNewArticleURL = function() {
         newArticleUrl = $('.js-post-add-btn').find('.edy-site-menu-add').attr('href');
-        console.log(newArticleUrl);
         $('.js-post-add').attr('href', newArticleUrl);
     };
 

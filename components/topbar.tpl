@@ -25,8 +25,14 @@
       </nav>
 
       {% if editmode or site.has_many_languages? %}
-        <nav class="menu-lang">
-          <button class="menu-lang-btn js-menu-lang-btn lang-flag {% for language in site.languages %}{% if language.selected? %}{{ language.code }}{% endif %}{% endfor %}">Choose language</button>
+        <nav class="menu-lang js-menu-lang-wrap {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
+          <button class="menu-lang-btn js-menu-lang-btn lang-flag-{% for language in site.languages %}{% if language.selected? %}{{ language.code }}{% endif %}{% endfor %}">
+            <span class="lang-title">
+              {% for language in site.languages %}{% if language.selected? %}{{ language.title }}{% endif %}{% endfor %}
+              <span class="ico-popover-toggle">▼</span>
+            </span>
+          </button>
+
           <div class="menu-lang-popover js-menu-lang-popover">
             {% include "menu-lang" %}
           </div>
