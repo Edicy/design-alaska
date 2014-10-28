@@ -119,23 +119,27 @@ module.exports = function(grunt) {
 
     // Minifies the image files.
     imagemin: {
-      minify_images: {
+      build: {
         files: [{
           expand: true,
           cwd: 'images/src/',
           src: '*.{png,jpg,gif}',
           dest: 'images/'
         }]
-      },
+      }
+    },
 
-      minify_assets: {
+    // Minifies the scalable vector graphics files
+    svgmin: {
+      build: {
         files: [{
           expand: true,
           cwd: 'assets/src/',
           src: '*.svg',
-          dest: 'assets/'
+          dest: 'assets/',
+          ext: '.svg'
         }]
-      }
+      },
     },
 
     // Watches the project for changes and recompiles the output files.
@@ -170,8 +174,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-modernizr');
   grunt.loadNpmTasks('grunt-newer');
+  grunt.loadNpmTasks('grunt-svgmin');
 
-  grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'cssmin', 'imagemin']);
+  grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'cssmin', 'imagemin', 'svgmin']);
 
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
