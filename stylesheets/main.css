@@ -249,6 +249,12 @@ body {
 .content-formatted .edy-texteditor-view {
   min-height: 21px;
 }
+.content-formatted .edy-image-container-with-title:after {
+  display: block;
+  padding: 4px;
+  font-size: 12px;
+  content: attr(data-title);
+}
 
 /* MENUS */
 .menu-btn {
