@@ -1,31 +1,27 @@
 /* FONTS */
 @font-face {
   font-family: "Aktiv Grotesk";
-  font-weight: 400;
   font-style: normal;
-  src: url("../assets/aktivgrotesk-corp-regular.eot");
-  src: url("../assets/aktivgrotesk-corp-regular.eot?#iefix") format("embedded-opentype"), url("../assets/aktivgrotesk-corp-regular.woff") format("woff"), url("../assets/aktivgrotesk-corp-regular.ttf") format("truetype"), url("../assets/aktivgrotesk-corp-regular.svg#Aktiv Grotesk") format("svg");
+  font-weight: 400;
+  src: url("../assets/aktivgrotesk-corp-regular.eot?#iefix") format("embedded-opentype"), url("../assets/aktivgrotesk-corp-regular.woff2") format("woff2"), url("../assets/aktivgrotesk-corp-regular.woff") format("woff"), url("../assets/aktivgrotesk-corp-regular.ttf") format("truetype"), url("../assets/aktivgrotesk-corp-regular.svg#Aktiv Grotesk") format("svg");
 }
 @font-face {
   font-family: "Aktiv Grotesk";
+  font-style: normal;
   font-weight: 700;
-  font-style: normal;
-  src: url("../assets/aktivgrotesk-corp-bold.eot");
-  src: url("../assets/aktivgrotesk-corp-bold.eot?#iefix") format("embedded-opentype"), url("../assets/aktivgrotesk-corp-bold.woff") format("woff"), url("../assets/aktivgrotesk-corp-bold.ttf") format("truetype"), url("../assets/aktivgrotesk-corp-bold.svg#Aktiv Grotesk") format("svg");
+  src: url("../assets/aktivgrotesk-corp-bold.eot?#iefix") format("embedded-opentype"), url("../assets/aktivgrotesk-corp-bold.woff2") format("woff2"), url("../assets/aktivgrotesk-corp-bold.woff") format("woff"), url("../assets/aktivgrotesk-corp-bold.ttf") format("truetype"), url("../assets/aktivgrotesk-corp-bold.svg#Aktiv Grotesk") format("svg");
 }
 @font-face {
   font-family: "Meta Serif Pro Book";
-  font-weight: 400;
   font-style: normal;
-  src: url("../assets/metaserifpro-book-regular.eot");
-  src: url("../assets/metaserifpro-book-regular.eot?#iefix") format("embedded-opentype"), url("../assets/metaserifpro-book-regular.woff") format("woff"), url("../assets/metaserifpro-book-regular.ttf") format("truetype"), url("../assets/metaserifpro-book-regular.svg#Meta Serif Pro Book") format("svg");
+  font-weight: 400;
+  src: url("../assets/metaserifpro-book-regular.eot?#iefix") format("embedded-opentype"), url("../assets/metaserifpro-book-regular.woff2") format("woff2"), url("../assets/metaserifpro-book-regular.woff") format("woff"), url("../assets/metaserifpro-book-regular.ttf") format("truetype"), url("../assets/metaserifpro-book-regular.svg#Meta Serif Pro Book") format("svg");
 }
 @font-face {
   font-family: "Meta Serif Pro Book";
-  font-weight: 400;
   font-style: italic;
-  src: url("../assets/metaserifpro-book-italic.eot");
-  src: url("../assets/metaserifpro-book-italic.eot?#iefix") format("embedded-opentype"), url("../assets/metaserifpro-book-italic.woff") format("woff"), url("../assets/metaserifpro-book-italic.ttf") format("truetype"), url("../assets/metaserifpro-book-italic.svg#Meta Serif Pro Book") format("svg");
+  font-weight: 400;
+  src: url("../assets/metaserifpro-book-italic.eot?#iefix") format("embedded-opentype"), url("../assets/metaserifpro-book-italic.woff2") format("woff2"), url("../assets/metaserifpro-book-italic.woff") format("woff"), url("../assets/metaserifpro-book-italic.ttf") format("truetype"), url("../assets/metaserifpro-book-italic.svg#Meta Serif Pro Book") format("svg");
 }
 /* GENERAL */
 body {
@@ -237,13 +233,15 @@ body {
   white-space: pre;
   line-height: inherit;
   background-color: transparent;
+  overflow-wrap: normal;
   word-wrap: normal;
+  word-break: normal;
 }
 .content-formatted code {
   display: inline-block;
   padding: 5px;
-  word-wrap: break-word;
   overflow-wrap: break-word;
+  word-wrap: break-word;
   word-break: break-all;
 }
 .content-formatted .edy-texteditor-view {
@@ -1137,8 +1135,6 @@ body {
   padding: 8px 8px 7px;
   background-color: white;
   border: 1px solid #dddddd;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 @media screen and (max-width: 420px) {
