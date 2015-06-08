@@ -1081,10 +1081,6 @@ body {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
-.content-formatted .horizontal-scroll {
-  border-left: 1px dashed #e6e6e6;
-  border-right: 1px dashed #e6e6e6;
-}
 .content-formatted table {
   width: 100%;
   margin-top: 20px;
