@@ -3,7 +3,7 @@
   .background-image {
     position: relative;
     text-align: center;
-    @include color($white);
+    color: $white;
     background-size: cover;
 
     .wrap {
@@ -12,11 +12,11 @@
       height: 600px;
       margin: 0 auto;
 
-      @include query($tablet-2) {
+      @media screen and (max-width: $tablet-2) {
         height: 340px;
       }
 
-      @include query($mobile-2) {
+      @media screen and (max-width: $mobile-2) {
         height: 215px;
       }
     }
@@ -33,7 +33,7 @@
 
     &,
     a {
-      @include color($white);
+      color: $white;
     }
 
     a {
@@ -47,6 +47,6 @@
     padding: 14px 32px 18px;
     font-style: italic;
     font-size: 24px;
-    @include border(all, 1px, solid, $white);
+    border: 1px solid $white;
   }
 }

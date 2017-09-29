@@ -2,7 +2,7 @@
 .footer {
   @extend %aktiv-grotesk;
   min-height: 87px;
-  @include border(top, 1px, solid, $secondary-color);
+  border-top: 1px solid $secondary-color;
 
   .wrap {
     padding: 30px 20px;
@@ -14,11 +14,11 @@
     }
 
     .flexbox & {
-      @include flexbox;
+      display: flex;
       max-width: 960px;
     }
 
-    @include query($mobile-1) {
+    @media screen and (max-width: $mobile-1) {
       .no-flexbox &,
       .flexbox & {
         display: block;
@@ -35,7 +35,7 @@
       width: 650px;
       text-align: right;
 
-      @include query($mobile-1) {
+      @media screen and (max-width: $mobile-1) {
         margin-top: 20px;
       }
     }
@@ -46,7 +46,7 @@
         display: table-cell;
         vertical-align: top;
       }
-      @include query($mobile-1) {
+      @media screen and (max-width: $mobile-1) {
         width: auto;
         text-align: center;
       }
@@ -61,7 +61,7 @@
     &,
     a {
       text-decoration: none;
-      @include color($primary-color);
+      color: $primary-color;
     }
   }
 
@@ -75,13 +75,13 @@
       text-decoration: none;
       font-size: 10px;
       line-height: 1;
-      @include color($grey-2, 0.75);
-      @include bg($white);
-      @include border(all, 1px, solid, $black, 0.1);
+      color: rgba($grey-2, .75);
+      background-color: $white;
+      border: 1px solid rgba($black, .1);
 
       &:hover {
-        @include color($grey-2, 0.75);
-        @include border(all, 1px, solid, $black, 0.75);
+        color: rgba($grey-2, .75);
+        border: 1px solid rgba($black, .75);
       }
     }
   }

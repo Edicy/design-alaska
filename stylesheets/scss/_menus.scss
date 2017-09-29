@@ -3,7 +3,7 @@
   display: none;
   @extend %button;
 
-  @include query($tablet-2) {
+  @media screen and (max-width: $tablet-2) {
     position: absolute;
     top: 24px;
     right: 20px;
@@ -17,7 +17,7 @@
     &.open,
     &:hover {
       .menu-stripe {
-        @include bg($secondary-color, 0.8);
+        background-color: rgba($secondary-color, .8);
       }
     }
 
@@ -26,11 +26,11 @@
       width: 25px;
       height: 4px;
       margin: 4px 0;
-      @include bg($secondary-color, 0.67);
+      background-color: rgba($secondary-color, .67);
       border-radius: 5px;
 
       &:hover {
-        @include bg($secondary-color, 0.8);
+        background-color: rgba($secondary-color, .8);
       }
 
       &:first-child,
@@ -57,7 +57,7 @@
     a {
       display: block;
       text-decoration: none;
-      @include color($primary-color);
+      color: $primary-color;
 
       &.untranslated {
         opacity: 0.5;
@@ -68,9 +68,9 @@
 
 .menu-main {
   @extend %inline-block;
-  @include border(right, 1px, solid, $secondary-color);
+  border-right: 1px solid $secondary-color;
 
-  @include query($tablet-2) {
+  @media screen and (max-width: $tablet-2) {
     display: none;
 
     &.expanded {
@@ -81,20 +81,20 @@
       display: block;
       min-width: 350px;
       text-align: left;
-      @include bg($white);
-      border-right: none;
-      @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
+      background-color: $white;
+      border-right: 0;
+      box-shadow: 0 5px 25px rgba($black, .3);
     }
   }
 
-  @include query($mobile-2) {
+  @media screen and (max-width: $mobile-2) {
 
     &.expanded {
       top: 68px;
       left: 0;
       right: 0;
-      @include border(top, 1px, solid, $secondary-color);
-      @include no-box-shadow;
+      border-top: 1px solid $secondary-color;
+      box-shadow: none;
     }
   }
 
@@ -106,8 +106,8 @@
     position: relative;
     top: 1px;
     float: left;
-    @include border(left, 1px, solid, $secondary-color);
-    @include border(bottom, 1px, solid, $secondary-color);
+    border-left: 1px solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
 
     &.edit-btn {
       a {
@@ -123,7 +123,7 @@
     &:first-child {
     }
 
-    @include query($tablet-2) {
+    @media screen and (max-width: $tablet-2) {
       top: 0;
       display: block;
       margin: 0;
@@ -131,7 +131,7 @@
       border-left: none;
     }
 
-    @include query($tablet-2) {
+    @media screen and (max-width: $tablet-2) {
       float: none;
     }
 
@@ -142,19 +142,19 @@
 
       &.active,
       &:hover {
-        @include color($white);
+        color: $white;
       }
 
       &.active,
       &.active:hover {
-        @include bg($primary-color);
+        background-color: $primary-color;
       }
 
       &:hover {
-        @include bg($primary-color, 0.8);
+        background-color: rgba($primary-color, .8);
       }
 
-      @include query($tablet-2) {
+      @media screen and (max-width: $tablet-2) {
         padding: 9px 25px;
       }
     }
@@ -163,7 +163,7 @@
   .menu-lang {
     display: none;
 
-    @include query($tablet-2) {
+    @media screen and (max-width: $tablet-2) {
       display: block;
       margin-left: 0;
       padding-left: 0;
@@ -177,13 +177,13 @@
         }
 
         &.active a:hover {
-          // @include bg($blue-2);
+          // background-color: $blue-2;
         }
 
         a {
           padding: 20px 30px 20px 53px;
           font-size: 14px;
-          @include color($secondary-color);
+          color: $secondary-color;
 
           &:before,
           &:after {
@@ -198,13 +198,13 @@
 
           &.active,
           &.active:hover {
-            @include color($primary-color);
+            color: $primary-color;
             background: none;
           }
 
           &:hover {
-            // @include color($grey-1, 0.4);
-            // @include bg($grey-2, 0.5);
+            color: rgba($grey, .4);
+            background-color: rgab($grey-2, .5);
           }
         }
 
@@ -254,7 +254,7 @@
   &.open {
     .ico-popover-toggle {
       left: 1px;
-      @include transform(rotate(180deg));
+      transform: rotate(180deg);
     }
   }
 
@@ -285,7 +285,7 @@
   }
 
   &:before {
-    @include bg($black);
+    background-color: $black;
   }
 
   &:after {
@@ -314,8 +314,8 @@
     padding: 6px 0;
     min-width: 121px;
     line-height: 1;
-    @include bg($white);
-    @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
+    background-color: $white;
+    box-shadow: 0 5px 25px rgba($black, 0.3);
     z-index: 1;
   }
 }
@@ -326,9 +326,9 @@
   top: 1px;
   margin-left: -5px;
   line-height: 0;
-  @include border(right, 1px, solid, $secondary-color);
+  border-right: 1px solid $secondary-color;
 
-  @include query($tablet-2) {
+  @media screen and (max-width: $tablet-2) {
     display: none;
   }
 
@@ -359,16 +359,16 @@
       position: relative;
       display: block;
       padding: 6px 40px 3px 13px;
-      @include color($primary-color);
+      color: $primary-color;
 
       &.active,
       &.active:hover {
-        @include color($white);
-        @include bg($primary-color);
+        color: $white;
+        background-color: $primary-color;
       }
 
       &:hover {
-        @include bg($primary-color, 0.8);
+        background-color: rgba($primary-color, .8);
       }
 
       &:before,
@@ -497,7 +497,7 @@ $flags:
 }
 
 .lang-options {
-  @include bg($black, 0.09);
+  background-color: rgba($black, .09);
 
   .menu {
     .menu-item {
@@ -516,10 +516,10 @@ $flags:
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
-  @include color($blue-1);
+  color: $blue-1;
 
   &:hover {
-    @include color($blue-1, 0.8);
+    color: rgba($blue-1, .8)
   }
 
   &::-moz-focus-inner {
@@ -555,7 +555,7 @@ $flags:
   @extend %aktiv-grotesk;
   text-align: center;
   font-weight: 700;
-  @include border(top, 1px, solid, $secondary-color);
+  border-top: 1px solid $secondary-color;
 
   .wrap {
     padding: 0;
@@ -568,8 +568,8 @@ $flags:
   li {
     @extend %inline-block;
     margin-left: -1px;
-    @include border(left, 1px, solid, $secondary-color);
-    @include border(right, 1px, solid, $secondary-color);
+    border-left: 1px solid $secondary-color;
+    border-right: 1px solid $secondary-color;
 
     &.pagination-previous,
     &.pagination-next {
@@ -588,7 +588,7 @@ $flags:
 
     &:first-child {
       margin-left: 0;
-      @include border(left, 1px, solid, $secondary-color);
+      border-left: 1px solid $secondary-color;
     }
 
     a {
@@ -596,16 +596,16 @@ $flags:
 
       &.active,
       &:hover {
-        @include color($white);
+        color: $white;
       }
 
       &.active,
       &.active:hover {
-        @include bg($primary-color);
+        background-color: $primary-color;
       }
 
       &:hover {
-        @include bg($primary-color, 0.8);
+        background-color: rgba($primary-color, .8);
       }
     }
   }

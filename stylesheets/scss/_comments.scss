@@ -1,13 +1,13 @@
 /* COMMENTS */
 .comments {
-  @include border(top, 1px, solid, $secondary-color);
+  border-top: 1px solid $secondary-color;
 
   .comment-title,
   .comment,
   .comment-form {
     margin-top: 25px;
 
-    @include query($mobile-2) {
+    @media screen and (max-width: $mobile-2) {
       margin-top: 0;
     }
   }
@@ -22,12 +22,12 @@
       margin-left: 0;
     }
 
-    @include query($tablet-4) {
+    @media screen and (max-width: $tablet-4) {
       display: block;
       margin-left: 0;
     }
 
-    @include query($mobile-2) {
+    @media screen and (max-width: $mobile-2) {
       max-width: 100%;
     }
 

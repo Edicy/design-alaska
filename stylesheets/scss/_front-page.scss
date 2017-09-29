@@ -4,8 +4,8 @@
     max-width: 1000px;
   }
 
-  .custom-gallery {
-  }
+  // .custom-gallery {
+  // }
 
   .gallery-inner {
     width: 100%;
@@ -42,7 +42,7 @@
     .blog-inner {
       @extend %inline-block;
 
-      @include query($tablet-1) {
+      @media screen and (max-width: $tablet-1) {
         display: block;
         margin-top: 50px;
         margin-left: 0;
@@ -58,7 +58,7 @@
       @extend %inline-block;
       width: 235px;
 
-      @include query($mobile-1) {
+      @media screen and (max-width: $mobile-1) {
         display: block;
 
         & {
@@ -74,13 +74,13 @@
     .post-header {
       display: block;
       text-decoration: none;
-      @include color($primary-color);
+      color: $primary-color;
 
       &:hover {
         text-decoration: underline;
 
         .post-cover-image {
-          @include opacity(0.8);
+          opacity: .8;
         }
       }
     }

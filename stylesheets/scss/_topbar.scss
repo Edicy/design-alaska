@@ -3,7 +3,7 @@
   min-height: 69px;
   margin-top: -1px;
   @extend %aktiv-grotesk;
-  @include border(bottom, 1px, solid, $secondary-color);
+  border-bottom: 1px solid $secondary-color;
 
   .wrap {
     padding: 0 20px;
@@ -14,11 +14,11 @@
     }
 
     .flexbox & {
-      @include flexbox;
+      display: flex;
       max-width: 960px;
     }
 
-    @include query($tablet-2) {
+    @media screen and (max-width: $tablet-2) {
       .no-flexbox &,
       .flexbox & {
         display: block;
@@ -33,7 +33,7 @@
       vertical-align: top;
     }
 
-    @include query($tablet-2) {
+    @media screen and (max-width: $tablet-2) {
       .no-flexbox & {
         display: block;
       }
@@ -48,7 +48,7 @@
     width: 830px;
     text-align: right;
 
-    @include query($tablet-2) {
+    @media screen and (max-width: $tablet-2) {
       width: auto;
     }
   }
@@ -61,7 +61,7 @@
     &,
     a {
       text-decoration: none;
-      @include color($primary-color);
+      color: $primary-color;
     }
   }
 }

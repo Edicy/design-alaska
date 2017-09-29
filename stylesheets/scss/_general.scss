@@ -6,7 +6,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
-  @include color($primary-color);
+  color: $primary-color;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -70,29 +70,29 @@ body {
   left: 0;
   width: 10px;
   height: 10px;
-  @include bg($primary-color);
-  @include animation(cubemove 1.8s infinite ease-in-out);
+  background-color: $primary-color;
+  animation: 1.8s infinite ease-in-out;
 }
 
 .loader-cube-2 {
-  @include animation-delay(-0.9s);
+  animation-delay: -0.9s;
 }
 
-@include keyframes(cubemove) {
+@keyframes cubemove {
   25% {
-    @include transform(translateX(42px) rotate(-90deg) scale(0.5));
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
   }
 
   50% {
-    @include transform(translateX(42px) translateY(42px) rotate(-180deg));
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
   }
 
   75% {
-    @include transform(translateX(0px) translateY(42px) rotate(-270deg) scale(0.5));
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
   }
 
   100% {
-    @include transform(rotate(-360deg));
+    transform: rotate(-360deg);
   }
 }
 
@@ -169,7 +169,7 @@ body {
   }
 
   a {
-    @include color($primary-color);
+    color: $primary-color;
 
     &:hover {
       text-decoration: none;
@@ -187,7 +187,7 @@ body {
   pre,
   code {
     font-size: 14px;
-    @include bg($grey-3);
+    background-color: $grey-3;
   }
 
   pre {

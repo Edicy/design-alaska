@@ -23,7 +23,10 @@
   .form_field_select {
     font-family: inherit;
     font-size: 16px;
-    @include inputiosreset;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+
   }
 
   .form_field_textfield,
@@ -45,16 +48,16 @@
     width: 280px;
     margin: 0;
     padding: 8px 8px 7px;
-    @include bg($white);
-    @include border(all, 1px, solid, $secondary-color);
+    background-color: $white;
+    border: 1px solid $secondary-color;
     box-sizing: border-box;
 
-    // TODO: Disable outlineon focus?
+    // TODO: Disable outline on focus?
     // &:focus {
     //   outline: none;
     // }
 
-    @include query($mobile-3) {
+    @media screen and (max-width: $mobile-3) {
       width: 100%;
     }
   }
@@ -93,7 +96,7 @@
   .form_field_size_medium {
     width: 420px;
 
-    @include query($mobile-3) {
+    @media screen and (max-width: $mobile-3) {
       width: 100%;
     }
   }
@@ -109,18 +112,21 @@
       margin: 18px 0 0;
       padding: 15px 20px;
       font-size: 18px;
-      @include color($white);
+      color: $white;
       line-height: 1;
-      @include bg($primary-color);
+      background-color: $primary-color;
       border: none;
       cursor: pointer;
-      @include inputiosreset;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0;
+              border-radius: 0;
+
 
       &:hover {
-        @include bg($primary-color, 0.8);
+        background-color: rgba($primary-color, .8);
       }
 
-      @include query($mobile-3) {
+      @media screen and (max-width: $mobile-3) {
         width: 100%;
       }
     }
@@ -130,7 +136,7 @@
 .form_error,
 .form_field_error {
   @extend %aktiv-grotesk;
-  @include color($red);
+  color: $red;
 }
 
 .form_error {
@@ -150,6 +156,6 @@
 
   .form_field_textfield,
   .form_field_textarea {
-    @include border(all, 1px, solid, $red);
+    border: 1px solid $red;
   }
 }
