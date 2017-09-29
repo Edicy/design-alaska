@@ -64,6 +64,27 @@ module.exports = function(grunt) {
       }
     },
 
+    postcss: {
+      options: {
+        processors: [
+          require('autoprefixer')({
+            browsers: 'last 4 versions'
+          })
+        ]
+      },
+      main_styles: {
+        src: [
+          'stylesheets/*.css',
+          'stylesheets/!*.min.css'
+        ]
+      }
+      // custom_styles: {
+      //   src: [
+      //     'sources/components/custom-styles/tmp/*.css'
+      //   ]
+      // }
+    },
+
     exec: {
       kitmanifest: {
         cmd: function(file) {
@@ -129,7 +150,7 @@ module.exports = function(grunt) {
 
       css: {
         files: 'stylesheets/scss/*.scss',
-        tasks: ['sass:build', 'cssmin:build', 'exec:kit:stylesheets/*.css']
+        tasks: ['sass:build', 'postcss:main_styles', 'cssmin:build', 'exec:kit:stylesheets/*.css']
       },
 
       voog: {
@@ -149,9 +170,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-modernizr');
+  grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-svgmin');
 
-  grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'cssmin', 'imagemin', 'svgmin']);
+  // grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'svgmin']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'svgmin']);
 
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
