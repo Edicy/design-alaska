@@ -11,6 +11,4 @@
       </div>
     </div>
   {% endif %}
-
-  {% include 'site-topbar' %}
 </header>
