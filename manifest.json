@@ -8,16 +8,16 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "page_front",
-      "title": "Front page"
+      "file": "layouts/common_page.tpl",
+      "layout_name": "page_default",
+      "title": "Common page"
     },
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/common_page.tpl",
-      "layout_name": "page_default",
-      "title": "Common page"
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_front",
+      "title": "Front page"
     },
     {
       "content_type": "blog",
@@ -36,30 +36,37 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/footer.tpl",
-      "layout_name": "footer",
-      "title": "footer"
+      "file": "components/tags-blog.tpl",
+      "layout_name": "tags-blog",
+      "title": "tags-blog"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/header.tpl",
-      "layout_name": "header",
-      "title": "header"
+      "file": "components/edicy-tools-variables.tpl",
+      "layout_name": "edicy-tools-variables",
+      "title": "edicy-tools-variables"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/html-head.tpl",
-      "layout_name": "html-head",
-      "title": "html-head"
+      "file": "components/topbar.tpl",
+      "layout_name": "topbar",
+      "title": "topbar"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/javascripts.tpl",
-      "layout_name": "javascripts",
-      "title": "javascripts"
+      "file": "components/search.tpl",
+      "layout_name": "search",
+      "title": "search"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/post-box.tpl",
+      "layout_name": "post-box",
+      "title": "post-box"
     },
     {
       "content_type": "component",
@@ -78,51 +85,23 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/menu-level-1.tpl",
-      "layout_name": "menu-level-1",
-      "title": "menu-level-1"
+      "file": "components/footer.tpl",
+      "layout_name": "footer",
+      "title": "footer"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/menu-level-2.tpl",
-      "layout_name": "menu-level-2",
-      "title": "menu-level-2"
+      "file": "components/javascripts.tpl",
+      "layout_name": "javascripts",
+      "title": "javascripts"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/open-graph.tpl",
-      "layout_name": "open-graph",
-      "title": "open-graph"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/post-box.tpl",
-      "layout_name": "post-box",
-      "title": "post-box"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/search.tpl",
-      "layout_name": "search",
-      "title": "search"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/sidebar.tpl",
-      "layout_name": "sidebar",
-      "title": "sidebar"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/tags-blog.tpl",
-      "layout_name": "tags-blog",
-      "title": "tags-blog"
+      "file": "components/header.tpl",
+      "layout_name": "header",
+      "title": "header"
     },
     {
       "content_type": "component",
@@ -134,9 +113,23 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/topbar.tpl",
-      "layout_name": "topbar",
-      "title": "topbar"
+      "file": "components/sidebar.tpl",
+      "layout_name": "sidebar",
+      "title": "sidebar"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools.tpl",
+      "layout_name": "edicy-tools",
+      "title": "edicy-tools"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/html-head.tpl",
+      "layout_name": "html-head",
+      "title": "html-head"
     },
     {
       "content_type": "component",
@@ -148,19 +141,68 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/edicy-tools-variables.tpl",
-      "layout_name": "edicy-tools-variables",
-      "title": "edicy-tools-variables"
+      "file": "components/template-meta.tpl",
+      "layout_name": "template-meta",
+      "title": "template-meta"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/edicy-tools.tpl",
-      "layout_name": "edicy-tools",
-      "title": "edicy-tools"
+      "file": "components/menu-level-2.tpl",
+      "layout_name": "menu-level-2",
+      "title": "menu-level-2"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-1.tpl",
+      "layout_name": "menu-level-1",
+      "title": "menu-level-1"
     }
   ],
   "assets": [
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-regular.ttf",
+      "kind": "unknown",
+      "filename": "metaserifpro-book-regular.ttf"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-italic.eot",
+      "kind": "unknown",
+      "filename": "metaserifpro-book-italic.eot"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/aktivgrotesk-corp-bold.ttf",
+      "kind": "unknown",
+      "filename": "aktivgrotesk-corp-bold.ttf"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-regular.eot",
+      "kind": "unknown",
+      "filename": "metaserifpro-book-regular.eot"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/ico-arrow-down.svg",
+      "kind": "unknown",
+      "filename": "ico-arrow-down.svg"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-italic.woff",
+      "kind": "unknown",
+      "filename": "metaserifpro-book-italic.woff"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/metaserifpro-book-italic.ttf",
+      "kind": "unknown",
+      "filename": "metaserifpro-book-italic.ttf"
+    },
     {
       "content_type": "unknown/unknown",
       "file": "assets/aktivgrotesk-corp-bold.eot",
@@ -175,9 +217,9 @@
     },
     {
       "content_type": "unknown/unknown",
-      "file": "assets/aktivgrotesk-corp-bold.ttf",
+      "file": "assets/ico-flags.svg",
       "kind": "unknown",
-      "filename": "aktivgrotesk-corp-bold.ttf"
+      "filename": "ico-flags.svg"
     },
     {
       "content_type": "unknown/unknown",
@@ -187,15 +229,9 @@
     },
     {
       "content_type": "unknown/unknown",
-      "file": "assets/aktivgrotesk-corp-reguar.svg",
+      "file": "assets/metaserifpro-book-regular.svg",
       "kind": "unknown",
-      "filename": "aktivgrotesk-corp-reguar.svg"
-    },
-    {
-      "content_type": "unknown/unknown",
-      "file": "assets/aktivgrotesk-corp-regular.eot",
-      "kind": "unknown",
-      "filename": "aktivgrotesk-corp-regular.eot"
+      "filename": "metaserifpro-book-regular.svg"
     },
     {
       "content_type": "unknown/unknown",
@@ -211,63 +247,33 @@
     },
     {
       "content_type": "unknown/unknown",
-      "file": "assets/ico-arrow-down.svg",
-      "kind": "unknown",
-      "filename": "ico-arrow-down.svg"
-    },
-    {
-      "content_type": "unknown/unknown",
-      "file": "assets/ico-flags.svg",
-      "kind": "unknown",
-      "filename": "ico-flags.svg"
-    },
-    {
-      "content_type": "unknown/unknown",
-      "file": "assets/metaserifpro-book-italic.eot",
-      "kind": "unknown",
-      "filename": "metaserifpro-book-italic.eot"
-    },
-    {
-      "content_type": "unknown/unknown",
       "file": "assets/metaserifpro-book-italic.svg",
       "kind": "unknown",
       "filename": "metaserifpro-book-italic.svg"
     },
     {
       "content_type": "unknown/unknown",
-      "file": "assets/metaserifpro-book-italic.ttf",
+      "file": "assets/aktivgrotesk-corp-reguar.svg",
       "kind": "unknown",
-      "filename": "metaserifpro-book-italic.ttf"
+      "filename": "aktivgrotesk-corp-reguar.svg"
     },
     {
       "content_type": "unknown/unknown",
-      "file": "assets/metaserifpro-book-italic.woff",
+      "file": "assets/aktivgrotesk-corp-regular.eot",
       "kind": "unknown",
-      "filename": "metaserifpro-book-italic.woff"
-    },
-    {
-      "content_type": "unknown/unknown",
-      "file": "assets/metaserifpro-book-regular.eot",
-      "kind": "unknown",
-      "filename": "metaserifpro-book-regular.eot"
-    },
-    {
-      "content_type": "unknown/unknown",
-      "file": "assets/metaserifpro-book-regular.svg",
-      "kind": "unknown",
-      "filename": "metaserifpro-book-regular.svg"
-    },
-    {
-      "content_type": "unknown/unknown",
-      "file": "assets/metaserifpro-book-regular.ttf",
-      "kind": "unknown",
-      "filename": "metaserifpro-book-regular.ttf"
+      "filename": "aktivgrotesk-corp-regular.eot"
     },
     {
       "content_type": "unknown/unknown",
       "file": "assets/metaserifpro-book-regular.woff",
       "kind": "unknown",
       "filename": "metaserifpro-book-regular.woff"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-arrow-down.png",
+      "kind": "image",
+      "filename": "ico-arrow-down.png"
     },
     {
       "content_type": "image/jpg",
@@ -277,21 +283,15 @@
     },
     {
       "content_type": "image/png",
-      "file": "images/ico-arrow-down.png",
-      "kind": "image",
-      "filename": "ico-arrow-down.png"
-    },
-    {
-      "content_type": "image/png",
       "file": "images/ico-flags.png",
       "kind": "image",
       "filename": "ico-flags.png"
     },
     {
       "content_type": "text/javascript",
-      "file": "javascripts/application.js",
+      "file": "javascripts/modernizr.min.js",
       "kind": "javascript",
-      "filename": "application.js"
+      "filename": "modernizr.min.js"
     },
     {
       "content_type": "text/javascript",
@@ -301,27 +301,27 @@
     },
     {
       "content_type": "text/javascript",
-      "file": "javascripts/modernizr.js",
+      "file": "javascripts/application.js",
       "kind": "javascript",
-      "filename": "modernizr.js"
+      "filename": "application.js"
     },
     {
       "content_type": "text/javascript",
-      "file": "javascripts/modernizr.min.js",
+      "file": "javascripts/modernizr.js",
       "kind": "javascript",
-      "filename": "modernizr.min.js"
-    },
-    {
-      "content_type": "text/css",
-      "file": "stylesheets/main.css",
-      "kind": "stylesheet",
-      "filename": "main.css"
+      "filename": "modernizr.js"
     },
     {
       "content_type": "text/css",
       "file": "stylesheets/main.min.css",
       "kind": "stylesheet",
       "filename": "main.min.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/main.css",
+      "kind": "stylesheet",
+      "filename": "main.css"
     }
   ]
 }
